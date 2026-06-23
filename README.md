@@ -4,12 +4,20 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 2
+Total Problems Solved: 4
+
+Easy: 4
+Medium: 0
+Hard: 0
+
+## Problems Solved
 
 ### Easy
 
 * Two Sum
 * Palindrome Number
+* Roman to Integer
+* Longest Common Prefix
 
 ### Medium
 
