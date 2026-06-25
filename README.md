@@ -4,10 +4,10 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 4
+Total Problems Solved: 5
 
 Easy: 4
-Medium: 0
+Medium: 1
 Hard: 0
 
 ## Problems Solved
@@ -21,7 +21,7 @@ Hard: 0
 
 ### Medium
 
-* None
+* Add Two Numbers
 
 ### Hard
 
@@ -35,7 +35,7 @@ Hard: 0
 * [ ] Sliding Window
 * [ ] Binary Search
 * [ ] Stack
-* [ ] Linked List
+* [x] Linked List
 * [ ] Trees
 * [ ] Graphs
 * [ ] Dynamic Programming
