@@ -4,10 +4,10 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 5
+Total Problems Solved: 6
 
 Easy: 4
-Medium: 1
+Medium: 2
 Hard: 0
 
 ## Problems Solved
@@ -22,6 +22,7 @@ Hard: 0
 ### Medium
 
 * Add Two Numbers
+* Longest Substring Without Repeating Characters
 
 ### Hard
 
@@ -32,7 +33,7 @@ Hard: 0
 * [x] Arrays
 * [ ] Hashing
 * [ ] Two Pointers
-* [ ] Sliding Window
+* [x] Sliding Window
 * [ ] Binary Search
 * [ ] Stack
 * [x] Linked List

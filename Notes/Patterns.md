@@ -65,3 +65,17 @@ O(max(m, n))
 
 **Space Complexity:**
 O(max(m, n))
+## Sliding Window
+
+**Problems:**
+
+* Longest Substring Without Repeating Characters
+
+**Key Idea:**
+Maintain a window using two pointers. Expand the window while characters are unique. If a duplicate appears, shrink the window from the left until the duplicate is removed.
+
+**Time Complexity:**
+O(n)
+
+**Space Complexity:**
+O(min(n, m))
