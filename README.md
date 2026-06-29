@@ -4,10 +4,12 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 6
+Total Problems Solved: 8
 
 Easy: 4
-Medium: 2
+
+Medium: 4
+
 Hard: 0
 
 ## Problems Solved
@@ -23,6 +25,8 @@ Hard: 0
 
 * Add Two Numbers
 * Longest Substring Without Repeating Characters
+* Longest Palindromic Substring
+* Zigzag Conversion
 
 ### Hard
 
@@ -40,3 +44,4 @@ Hard: 0
 * [ ] Trees
 * [ ] Graphs
 * [ ] Dynamic Programming
+* [x] Strings

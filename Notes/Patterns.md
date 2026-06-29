@@ -79,3 +79,37 @@ O(n)
 
 **Space Complexity:**
 O(min(n, m))
+
+---
+
+## Expand Around Center
+
+**Problems:**
+
+* Longest Palindromic Substring
+
+**Key Idea:**
+Treat every character (and every gap between two characters) as the center of a palindrome and expand outward while the characters match.
+
+**Time Complexity:**
+O(n²)
+
+**Space Complexity:**
+O(1)
+
+---
+
+## Simulation
+
+**Problems:**
+
+* Zigzag Conversion
+
+**Key Idea:**
+Simulate writing characters row by row while changing direction at the first and last rows.
+
+**Time Complexity:**
+O(n)
+
+**Space Complexity:**
+O(n)
