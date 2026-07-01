@@ -58,13 +58,9 @@ Compare characters across all strings until a mismatch occurs.
 * Handle carry while adding digits.
 * Create a new linked list node by node.
 * Use a dummy node to simplify insertion.
-* Continue until both lists and the carry are exhausted.
 
-**Time Complexity:**
-O(max(m, n))
+---
 
-**Space Complexity:**
-O(max(m, n))
 ## Sliding Window
 
 **Problems:**
@@ -72,13 +68,7 @@ O(max(m, n))
 * Longest Substring Without Repeating Characters
 
 **Key Idea:**
-Maintain a window using two pointers. Expand the window while characters are unique. If a duplicate appears, shrink the window from the left until the duplicate is removed.
-
-**Time Complexity:**
-O(n)
-
-**Space Complexity:**
-O(min(n, m))
+Maintain a moving window using two pointers while tracking unique characters with a set.
 
 ---
 
@@ -89,13 +79,7 @@ O(min(n, m))
 * Longest Palindromic Substring
 
 **Key Idea:**
-Treat every character (and every gap between two characters) as the center of a palindrome and expand outward while the characters match.
-
-**Time Complexity:**
-O(n²)
-
-**Space Complexity:**
-O(1)
+Treat every character and every gap as the center of a palindrome and expand outward.
 
 ---
 
@@ -108,8 +92,35 @@ O(1)
 **Key Idea:**
 Simulate writing characters row by row while changing direction at the first and last rows.
 
-**Time Complexity:**
-O(n)
+---
 
-**Space Complexity:**
-O(n)
+## Stack
+
+**Problems:**
+
+* Valid Parentheses
+
+**Key Idea:**
+Use a stack to keep track of opening brackets and match them with closing brackets in LIFO order.
+
+---
+
+## Frequency Count
+
+**Problems:**
+
+* Valid Anagram
+
+**Key Idea:**
+Count the frequency of every character using a hash map and compare both strings efficiently.
+
+---
+
+## Hash Map + Sorting
+
+**Problems:**
+
+* Group Anagrams
+
+**Key Idea:**
+Sort every string to create a common key and group words with identical sorted representations.

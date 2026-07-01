@@ -4,11 +4,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 8
+Total Problems Solved: 11
 
-Easy: 4
+Easy: 6
 
-Medium: 4
+Medium: 5
 
 Hard: 0
 
@@ -20,6 +20,8 @@ Hard: 0
 * Palindrome Number
 * Roman to Integer
 * Longest Common Prefix
+* Valid Parentheses
+* Valid Anagram
 
 ### Medium
 
@@ -27,6 +29,7 @@ Hard: 0
 * Longest Substring Without Repeating Characters
 * Longest Palindromic Substring
 * Zigzag Conversion
+* Group Anagrams
 
 ### Hard
 
@@ -35,13 +38,13 @@ Hard: 0
 ## Topics Covered
 
 * [x] Arrays
-* [ ] Hashing
+* [x] Hashing
 * [ ] Two Pointers
 * [x] Sliding Window
 * [ ] Binary Search
-* [ ] Stack
+* [x] Stack
 * [x] Linked List
+* [x] Strings
 * [ ] Trees
 * [ ] Graphs
 * [ ] Dynamic Programming
-* [x] Strings
