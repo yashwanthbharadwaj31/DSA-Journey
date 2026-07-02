@@ -124,3 +124,36 @@ Count the frequency of every character using a hash map and compare both strings
 
 **Key Idea:**
 Sort every string to create a common key and group words with identical sorted representations.
+
+---
+
+## Two Pointers
+
+**Problems:**
+
+* Valid Palindrome
+
+**Key Idea:**
+Use one pointer from the beginning and another from the end, moving toward the center while comparing characters or values.
+
+---
+
+## Two Pointers + Greedy
+
+**Problems:**
+
+* Container With Most Water
+
+**Key Idea:**
+Calculate the area formed by two pointers and always move the pointer with the smaller height, since moving the taller one cannot increase the maximum possible area.
+
+---
+
+## Sorting + Two Pointers
+
+**Problems:**
+
+* 3Sum
+
+**Key Idea:**
+Sort the array first, fix one element, then use two pointers to find the remaining two values while skipping duplicates to avoid repeated triplets.
