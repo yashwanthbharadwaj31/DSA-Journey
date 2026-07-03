@@ -156,4 +156,26 @@ Calculate the area formed by two pointers and always move the pointer with the s
 * 3Sum
 
 **Key Idea:**
-Sort the array first, fix one element, then use two pointers to find the remaining two values while skipping duplicates to avoid repeated triplets.
+Sort the array first, fix one element, then use two pointers to find the remaining two values while skipping duplicates.
+
+---
+
+## Binary Search
+
+**Problems:**
+
+* Binary Search
+
+**Key Idea:**
+Repeatedly divide the sorted search space into halves until the target is found or the search space becomes empty.
+
+---
+
+## Modified Binary Search
+
+**Problems:**
+
+* Search in Rotated Sorted Array
+
+**Key Idea:**
+Identify which half of the rotated array is sorted and determine whether the target lies in that half before eliminating the other half.

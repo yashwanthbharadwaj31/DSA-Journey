@@ -4,11 +4,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 14
+Total Problems Solved: 16
 
-Easy: 7
+Easy: 8
 
-Medium: 7
+Medium: 8
 
 Hard: 0
 
@@ -23,6 +23,7 @@ Hard: 0
 * Valid Parentheses
 * Valid Anagram
 * Valid Palindrome
+* Binary Search
 
 ### Medium
 
@@ -33,6 +34,7 @@ Hard: 0
 * Group Anagrams
 * Container With Most Water
 * 3Sum
+* Search in Rotated Sorted Array
 
 ### Hard
 
@@ -47,9 +49,10 @@ Hard: 0
 * [x] Linked List
 * [x] Sliding Window
 * [x] Two Pointers
-* [ ] Binary Search
+* [x] Binary Search
 * [ ] Trees
 * [ ] Graphs
 * [ ] Heap
 * [ ] Backtracking
 * [ ] Dynamic Programming
+s
