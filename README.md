@@ -4,11 +4,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 16
+Total Problems Solved: 18
 
 Easy: 8
 
-Medium: 8
+Medium: 10
 
 Hard: 0
 
@@ -35,6 +35,8 @@ Hard: 0
 * Container With Most Water
 * 3Sum
 * Search in Rotated Sorted Array
+* Find First and Last Position of Element in Sorted Array
+* Search a 2D Matrix
 
 ### Hard
 
@@ -55,4 +57,3 @@ Hard: 0
 * [ ] Heap
 * [ ] Backtracking
 * [ ] Dynamic Programming
-s

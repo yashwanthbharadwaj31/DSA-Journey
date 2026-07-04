@@ -179,3 +179,27 @@ Repeatedly divide the sorted search space into halves until the target is found 
 
 **Key Idea:**
 Identify which half of the rotated array is sorted and determine whether the target lies in that half before eliminating the other half.
+
+---
+
+---
+
+## Binary Search on Boundaries
+
+**Problems:**
+
+* Find First and Last Position of Element in Sorted Array
+
+**Key Idea:**
+Run Binary Search twice—once to find the first occurrence by continuing the search to the left, and once to find the last occurrence by continuing the search to the right.
+
+---
+
+## Binary Search on Matrix
+
+**Problems:**
+
+* Search a 2D Matrix
+
+**Key Idea:**
+Treat the entire matrix as a single sorted array. Convert the middle index into row and column indices using division and modulus to perform Binary Search efficiently.
