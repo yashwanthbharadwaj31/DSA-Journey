@@ -203,3 +203,28 @@ Run Binary Search twice—once to find the first occurrence by continuing the se
 
 **Key Idea:**
 Treat the entire matrix as a single sorted array. Convert the middle index into row and column indices using division and modulus to perform Binary Search efficiently.
+
+---
+
+---
+
+## Modified Binary Search
+
+**Problems:**
+
+* Find Minimum in Rotated Sorted Array
+
+**Key Idea:**
+Compare the middle element with the rightmost element to determine which half contains the minimum value. Eliminate the sorted half and continue searching in the unsorted half.
+
+---
+
+## Binary Search on Answer
+
+**Problems:**
+
+* Find Peak Element
+
+**Key Idea:**
+Instead of searching for an exact value, compare adjacent elements to determine which direction leads toward a peak. Eliminate half of the search space in every iteration.
+

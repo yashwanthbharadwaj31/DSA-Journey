@@ -4,13 +4,13 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 18
+**Total Problems Solved:** 20
 
-Easy: 8
+* Easy: 8
+* Medium: 12
+* Hard: 0
 
-Medium: 10
-
-Hard: 0
+---
 
 ## Problems Solved
 
@@ -37,10 +37,14 @@ Hard: 0
 * Search in Rotated Sorted Array
 * Find First and Last Position of Element in Sorted Array
 * Search a 2D Matrix
+* Find Minimum in Rotated Sorted Array
+* Find Peak Element
 
 ### Hard
 
 * None
+
+---
 
 ## Topics Covered
 
@@ -57,3 +61,11 @@ Hard: 0
 * [ ] Heap
 * [ ] Backtracking
 * [ ] Dynamic Programming
+
+---
+
+## Milestones
+
+* ✅ 10 Problems Completed
+* ✅ 20 Problems Completed
+* 🎯 Next Target: 30 Problems
