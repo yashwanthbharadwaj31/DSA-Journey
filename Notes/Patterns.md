@@ -228,3 +228,55 @@ Compare the middle element with the rightmost element to determine which half co
 **Key Idea:**
 Instead of searching for an exact value, compare adjacent elements to determine which direction leads toward a peak. Eliminate half of the search space in every iteration.
 
+---
+
+## Trees
+
+### DFS (Depth First Search)
+
+**Problems:**
+- Binary Tree Inorder Traversal
+- Maximum Depth of Binary Tree
+
+**Key Idea:**
+DFS explores one branch of the tree completely before moving to another branch. In binary trees, recursion is the most common way to implement DFS.
+
+**Recognition:**
+Question contains:
+- Traversal
+- Height
+- Depth
+
+Think:
+- DFS
+- Recursion
+
+**Time Complexity:**
+O(n)
+
+**Space Complexity:**
+O(h)
+
+---
+
+### Inorder Traversal
+
+**Problems:**
+- Binary Tree Inorder Traversal
+
+**Traversal Order:**
+Left → Root → Right
+
+**Key Idea:**
+Visit the left subtree, then the current node, and finally the right subtree.
+
+---
+
+### Maximum Depth of Binary Tree
+
+**Problems:**
+- Maximum Depth of Binary Tree
+
+**Key Idea:**
+Recursively calculate the depth of the left and right subtrees. The answer is the larger depth plus one for the current node.
+

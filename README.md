@@ -4,9 +4,9 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 20
+**Total Problems Solved:** 22
 
-* Easy: 8
+* Easy: 10
 * Medium: 12
 * Hard: 0
 
@@ -24,6 +24,8 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 * Valid Anagram
 * Valid Palindrome
 * Binary Search
+* Binary Tree Inorder Traversal
+* Maximum Depth of Binary Tree
 
 ### Medium
 
@@ -56,7 +58,7 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 * [x] Sliding Window
 * [x] Two Pointers
 * [x] Binary Search
-* [ ] Trees
+* [x] Trees
 * [ ] Graphs
 * [ ] Heap
 * [ ] Backtracking
@@ -66,6 +68,6 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Milestones
 
-* ✅ 10 Problems Completed
-* ✅ 20 Problems Completed
-* 🎯 Next Target: 30 Problems
+* 10 Problems Completed
+* 20 Problems Completed
+* Next Target: 30 Problems
