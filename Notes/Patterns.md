@@ -280,3 +280,76 @@ Visit the left subtree, then the current node, and finally the right subtree.
 **Key Idea:**
 Recursively calculate the depth of the left and right subtrees. The answer is the larger depth plus one for the current node.
 
+---
+
+## Comparing Trees
+
+**Problems:**
+- Same Tree
+- Symmetric Tree
+
+**Pattern:**
+DFS (Recursion)
+
+**Recognition:**
+Question contains:
+- Same Tree
+- Equal Tree
+- Compare Trees
+- Symmetric Tree
+- Mirror Tree
+
+Think:
+- DFS
+- Recursion
+
+---
+
+## Same Tree
+
+**Key Idea:**
+Compare the corresponding nodes of both trees.
+
+Conditions:
+- Both nodes are null → Same
+- One node is null → Different
+- Values are different → Different
+- Compare left subtrees.
+- Compare right subtrees.
+
+---
+
+## Symmetric Tree
+
+**Key Idea:**
+Check whether the left subtree is the mirror image of the right subtree.
+
+Mirror Comparison:
+
+Left Tree            Right Tree
+
+Left   ↔ Right
+
+Right  ↔ Left
+
+---
+
+## Tree Comparison Pattern
+
+Whenever the question asks:
+
+- Same Tree
+- Mirror Tree
+- Symmetric Tree
+
+Think:
+
+DFS
+
+↓
+
+Recursion
+
+↓
+
+Compare corresponding nodes recursively

@@ -4,11 +4,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 22
+**Total Problems Solved:** 24
 
-* Easy: 10
-* Medium: 12
-* Hard: 0
+- Easy: 12
+- Medium: 12
+- Hard: 0
 
 ---
 
@@ -16,58 +16,60 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ### Easy
 
-* Two Sum
-* Palindrome Number
-* Roman to Integer
-* Longest Common Prefix
-* Valid Parentheses
-* Valid Anagram
-* Valid Palindrome
-* Binary Search
-* Binary Tree Inorder Traversal
-* Maximum Depth of Binary Tree
+- Two Sum
+- Palindrome Number
+- Roman to Integer
+- Longest Common Prefix
+- Valid Parentheses
+- Valid Anagram
+- Valid Palindrome
+- Binary Search
+- Binary Tree Inorder Traversal
+- Maximum Depth of Binary Tree
+- Same Tree
+- Symmetric Tree
 
 ### Medium
 
-* Add Two Numbers
-* Longest Substring Without Repeating Characters
-* Longest Palindromic Substring
-* Zigzag Conversion
-* Group Anagrams
-* Container With Most Water
-* 3Sum
-* Search in Rotated Sorted Array
-* Find First and Last Position of Element in Sorted Array
-* Search a 2D Matrix
-* Find Minimum in Rotated Sorted Array
-* Find Peak Element
+- Add Two Numbers
+- Longest Substring Without Repeating Characters
+- Longest Palindromic Substring
+- Zigzag Conversion
+- Group Anagrams
+- Container With Most Water
+- 3Sum
+- Search in Rotated Sorted Array
+- Find First and Last Position of Element in Sorted Array
+- Search a 2D Matrix
+- Find Minimum in Rotated Sorted Array
+- Find Peak Element
 
 ### Hard
 
-* None
+- None
 
 ---
 
 ## Topics Covered
 
-* [x] Arrays
-* [x] Strings
-* [x] Hashing
-* [x] Stack
-* [x] Linked List
-* [x] Sliding Window
-* [x] Two Pointers
-* [x] Binary Search
-* [x] Trees
-* [ ] Graphs
-* [ ] Heap
-* [ ] Backtracking
-* [ ] Dynamic Programming
+- [x] Arrays
+- [x] Strings
+- [x] Hashing
+- [x] Stack
+- [x] Linked List
+- [x] Sliding Window
+- [x] Two Pointers
+- [x] Binary Search
+- [x] Trees
+- [ ] Heap
+- [ ] Graphs
+- [ ] Backtracking
+- [ ] Dynamic Programming
 
 ---
 
 ## Milestones
 
-* 10 Problems Completed
-* 20 Problems Completed
-* Next Target: 30 Problems
+- 10 Problems Completed
+- 20 Problems Completed
+- Next Target: 30 Problems
