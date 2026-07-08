@@ -4,9 +4,9 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 24
+**Total Problems Solved:** 26
 
-- Easy: 12
+- Easy: 14
 - Medium: 12
 - Hard: 0
 
@@ -28,6 +28,8 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 - Maximum Depth of Binary Tree
 - Same Tree
 - Symmetric Tree
+- Invert Binary Tree
+- Balanced Binary Tree
 
 ### Medium
 
@@ -39,10 +41,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 - Container With Most Water
 - 3Sum
 - Search in Rotated Sorted Array
-- Find First and Last Position of Element in Sorted Array
+- Find First and Last Position of Element
 - Search a 2D Matrix
 - Find Minimum in Rotated Sorted Array
 - Find Peak Element
+- Diameter of Binary Tree
 
 ### Hard
 

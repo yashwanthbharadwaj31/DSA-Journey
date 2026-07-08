@@ -353,3 +353,95 @@ Recursion
 ↓
 
 Compare corresponding nodes recursively
+
+---
+
+# Trees - Diameter of Binary Tree
+
+Problem:
+- #543 Diameter of Binary Tree
+
+Pattern:
+DFS + Postorder Traversal
+
+Recognition:
+
+Question asks:
+- Longest path
+- Diameter
+- Maximum distance
+
+Think:
+
+DFS
+
+↓
+
+Postorder Traversal
+
+↓
+
+Calculate left depth
+
+↓
+
+Calculate right depth
+
+↓
+
+Update answer
+
+Key Idea:
+
+Diameter passing through a node
+
+=
+
+Left Depth + Right Depth
+
+---
+
+# Trees - Balanced Binary Tree
+
+Problem:
+- #110 Balanced Binary Tree
+
+Pattern:
+DFS + Bottom-Up Recursion
+
+Recognition:
+
+Question asks:
+
+- Balanced Tree
+- Height Difference
+- Height Balanced
+
+Think:
+
+DFS
+
+↓
+
+Recursion
+
+↓
+
+Return Height
+
+↓
+
+Return -1 if unbalanced
+
+Key Idea:
+
+If any subtree becomes unbalanced,
+immediately return -1.
+
+Otherwise,
+
+return
+
+1 + max(leftHeight, rightHeight)
+
+This avoids recalculating heights.
