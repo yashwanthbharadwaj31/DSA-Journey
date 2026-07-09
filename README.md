@@ -4,10 +4,10 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 26
+**Total Problems Solved:** 28
 
-- Easy: 14
-- Medium: 12
+- Easy: 15
+- Medium: 13
 - Hard: 0
 
 ---
@@ -25,6 +25,7 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 - Valid Palindrome
 - Binary Search
 - Binary Tree Inorder Traversal
+- Binary Tree Preorder Traversal
 - Maximum Depth of Binary Tree
 - Same Tree
 - Symmetric Tree
@@ -39,13 +40,13 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 - Zigzag Conversion
 - Group Anagrams
 - Container With Most Water
-- 3Sum
 - Search in Rotated Sorted Array
 - Find First and Last Position of Element
 - Search a 2D Matrix
 - Find Minimum in Rotated Sorted Array
 - Find Peak Element
 - Diameter of Binary Tree
+- Validate Binary Search Tree
 
 ### Hard
 
@@ -73,6 +74,6 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Milestones
 
-- 10 Problems Completed
-- 20 Problems Completed
-- Next Target: 30 Problems
+-  10 Problems Completed
+-  20 Problems Completed
+-  Next Target: 30 Problems

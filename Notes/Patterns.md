@@ -445,3 +445,88 @@ return
 1 + max(leftHeight, rightHeight)
 
 This avoids recalculating heights.
+
+---
+
+# Trees - Binary Tree Preorder Traversal
+
+Problem:
+- #144 Binary Tree Preorder Traversal
+
+Pattern:
+DFS (Preorder Traversal)
+
+Recognition:
+
+Question asks:
+- Preorder Traversal
+- Visit every node
+
+Think:
+
+DFS
+
+↓
+
+Root
+
+↓
+
+Left
+
+↓
+
+Right
+
+Key Idea:
+
+Visit the current node first,
+then recursively traverse the left subtree,
+followed by the right subtree.
+
+---
+
+# Trees - Validate Binary Search Tree
+
+Problem:
+- #98 Validate Binary Search Tree
+
+Pattern:
+DFS + Bounds
+
+Recognition:
+
+Question asks:
+
+- Binary Search Tree
+- Validate BST
+- Is Valid BST
+
+Think:
+
+DFS
+
+↓
+
+Lower Bound
+
+↓
+
+Upper Bound
+
+↓
+
+Validate every node
+
+Key Idea:
+
+Each node must satisfy:
+
+low < node.val < high
+
+The valid range is updated recursively
+while traversing the tree.
+
+Never compare only with the parent.
+Every node must satisfy the constraints
+imposed by all its ancestors.
