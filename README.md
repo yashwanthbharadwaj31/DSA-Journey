@@ -4,11 +4,13 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 28
+Total Problems Solved: 30
 
-- Easy: 15
-- Medium: 13
-- Hard: 0
+Easy: 16
+
+Medium: 14
+
+Hard: 0
 
 ---
 
@@ -31,6 +33,7 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 - Symmetric Tree
 - Invert Binary Tree
 - Balanced Binary Tree
+- Count Complete Tree Nodes
 
 ### Medium
 
@@ -47,6 +50,7 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 - Find Peak Element
 - Diameter of Binary Tree
 - Validate Binary Search Tree
+- Binary Tree Right Side View
 
 ### Hard
 
@@ -74,6 +78,8 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Milestones
 
--  10 Problems Completed
--  20 Problems Completed
--  Next Target: 30 Problems
+- Completed 10 Problems
+- Completed 20 Problems
+- Completed 30 Problems
+
+Next Target: 40 Problems

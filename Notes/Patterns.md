@@ -530,3 +530,80 @@ while traversing the tree.
 Never compare only with the parent.
 Every node must satisfy the constraints
 imposed by all its ancestors.
+
+---
+
+## Trees - Binary Tree Right Side View
+
+Problem:
+- #199 Binary Tree Right Side View
+
+Pattern:
+DFS (Right First)
+
+Recognition:
+
+Question contains:
+- Right Side View
+- Visible Nodes
+- Rightmost Node
+- Level View
+
+Think:
+
+DFS
+
+↓
+
+Visit Right Child First
+
+↓
+
+Store First Node of Each Level
+
+Key Idea:
+
+Traverse the right subtree before the left subtree.
+
+The first node visited at every level is visible from the right side.
+
+---
+
+## Trees - Count Complete Tree Nodes
+
+Problem:
+- #222 Count Complete Tree Nodes
+
+Pattern:
+DFS (Recursion)
+
+Recognition:
+
+Question contains:
+- Count Nodes
+- Complete Binary Tree
+- Number of Nodes
+
+Think:
+
+DFS
+
+↓
+
+Count Left Subtree
+
+↓
+
+Count Right Subtree
+
+↓
+
+Return Total Count
+
+Key Idea:
+
+Every node contributes one count.
+
+Answer =
+
+1 + Left Count + Right Count
