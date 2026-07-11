@@ -607,3 +607,43 @@ Every node contributes one count.
 Answer =
 
 1 + Left Count + Right Count
+
+---
+
+## Trees - Binary Tree Postorder Traversal
+
+Problem:
+- #145 Binary Tree Postorder Traversal
+
+Pattern:
+DFS (Postorder Traversal)
+
+Recognition:
+
+Question contains:
+- Postorder Traversal
+- Visit every node
+
+Think:
+
+DFS
+
+↓
+
+Left
+
+↓
+
+Right
+
+↓
+
+Root
+
+Key Idea:
+
+Visit both subtrees completely before processing the current node.
+
+Traversal Order:
+
+Left → Right → Root
