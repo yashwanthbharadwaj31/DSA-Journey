@@ -647,3 +647,127 @@ Visit both subtrees completely before processing the current node.
 Traversal Order:
 
 Left → Right → Root
+
+---
+
+## Trees - Construct Binary Tree from Preorder and Inorder Traversal
+
+Problem:
+- #105 Construct Binary Tree from Preorder and Inorder Traversal
+
+Pattern:
+DFS + Divide & Conquer + Hash Map
+
+Recognition:
+
+Question contains:
+- Construct Tree
+- Build Tree
+- Preorder
+- Inorder
+
+Think:
+
+Preorder
+
+↓
+
+Root comes first
+
+↓
+
+Find Root in Inorder
+
+↓
+
+Split Left & Right Subtrees
+
+↓
+
+Recursively Build Tree
+
+Key Idea:
+
+Preorder tells you the root.
+
+Inorder tells you where to split the tree.
+
+A Hash Map allows O(1) lookup of each node's index.
+
+---
+
+## Arrays - Best Time to Buy and Sell Stock
+
+Problem:
+- #121 Best Time to Buy and Sell Stock
+
+Pattern:
+Greedy
+
+Recognition:
+
+Question contains:
+- Buy once
+- Sell once
+- Maximum Profit
+
+Think:
+
+Traverse Once
+
+↓
+
+Keep Minimum Price
+
+↓
+
+Calculate Current Profit
+
+↓
+
+Update Maximum Profit
+
+Key Idea:
+
+Keep track of the cheapest buying price seen so far.
+
+At every day, calculate the profit if sold today.
+
+---
+
+## Arrays - Contains Duplicate
+
+Problem:
+- #217 Contains Duplicate
+
+Pattern:
+Hash Set
+
+Recognition:
+
+Question contains:
+- Duplicate
+- Repeated Element
+- Unique Values
+
+Think:
+
+Traverse Array
+
+↓
+
+Hash Set
+
+↓
+
+Already Exists?
+
+↓
+
+Return True
+
+Key Idea:
+
+Hash Set provides O(1) average lookup.
+
+If an element is already present, a duplicate exists.

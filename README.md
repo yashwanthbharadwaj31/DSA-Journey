@@ -4,13 +4,61 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 31
+Total Problems Solved: 34
 
-Easy: 17
+Easy: 19
 
-Medium: 14
+Medium: 15
 
 Hard: 0
+
+---
+
+## Problems Solved
+
+### Easy
+
+- Two Sum
+- Palindrome Number
+- Roman to Integer
+- Longest Common Prefix
+- Valid Parentheses
+- Valid Anagram
+- Valid Palindrome
+- Binary Search
+- Best Time to Buy and Sell Stock
+- Contains Duplicate
+- Binary Tree Inorder Traversal
+- Binary Tree Preorder Traversal
+- Binary Tree Postorder Traversal
+- Maximum Depth of Binary Tree
+- Same Tree
+- Symmetric Tree
+- Invert Binary Tree
+- Balanced Binary Tree
+- Count Complete Tree Nodes
+
+### Medium
+
+- Add Two Numbers
+- Longest Substring Without Repeating Characters
+- Longest Palindromic Substring
+- Zigzag Conversion
+- Group Anagrams
+- Container With Most Water
+- Search in Rotated Sorted Array
+- Find First and Last Position of Element
+- Search a 2D Matrix
+- Find Minimum in Rotated Sorted Array
+- Find Peak Element
+- Diameter of Binary Tree
+- Validate Binary Search Tree
+- Binary Tree Right Side View
+- Construct Binary Tree from Preorder and Inorder Traversal
+
+### Hard
+
+- None
 
 ---
 
