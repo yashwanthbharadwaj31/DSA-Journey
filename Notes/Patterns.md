@@ -771,3 +771,80 @@ Key Idea:
 Hash Set provides O(1) average lookup.
 
 If an element is already present, a duplicate exists.
+
+---
+
+## Arrays - Product of Array Except Self
+
+Problem:
+- #238 Product of Array Except Self
+
+Pattern:
+Prefix Product + Suffix Product
+
+Recognition:
+
+Question contains:
+- Product Except Self
+- Product of Remaining Elements
+- No Division
+
+Think:
+
+Prefix Product
+
+↓
+
+Suffix Product
+
+↓
+
+Combine Both
+
+Key Idea:
+
+Compute the product of all elements to the left of each index.
+
+Then multiply it with the product of all elements to the right.
+
+This avoids division and solves the problem in linear time.
+
+---
+
+## Arrays - Maximum Subarray
+
+Problem:
+- #53 Maximum Subarray
+
+Pattern:
+Kadane's Algorithm
+
+Recognition:
+
+Question contains:
+- Maximum Sum
+- Largest Sum
+- Contiguous Subarray
+
+Think:
+
+Current Sum
+
+↓
+
+Maximum Sum
+
+↓
+
+Restart Current Sum if Needed
+
+Key Idea:
+
+At every element,
+
+choose the better option:
+
+- Start a new subarray.
+- Continue the previous subarray.
+
+Whichever produces the larger sum becomes the new current sum.

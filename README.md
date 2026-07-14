@@ -4,11 +4,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 34
+Total Problems Solved: 36
 
 Easy: 19
 
-Medium: 15
+Medium: 17
 
 Hard: 0
 
@@ -55,6 +55,8 @@ Hard: 0
 - Validate Binary Search Tree
 - Binary Tree Right Side View
 - Construct Binary Tree from Preorder and Inorder Traversal
+- Product of Array Except Self
+- Maximum Subarray
 
 ### Hard
 
