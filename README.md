@@ -4,11 +4,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 36
+Total Problems Solved: 38
 
 Easy: 19
 
-Medium: 17
+Medium: 19
 
 Hard: 0
 
@@ -57,6 +57,8 @@ Hard: 0
 - Construct Binary Tree from Preorder and Inorder Traversal
 - Product of Array Except Self
 - Maximum Subarray
+- Maximum Product Subarray
+- Merge Intervals
 
 ### Hard
 

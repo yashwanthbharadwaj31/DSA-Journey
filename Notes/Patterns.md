@@ -848,3 +848,88 @@ choose the better option:
 - Continue the previous subarray.
 
 Whichever produces the larger sum becomes the new current sum.
+
+---
+
+## Arrays - Maximum Product Subarray
+
+Problem:
+- #152 Maximum Product Subarray
+
+Pattern:
+Dynamic Tracking
+
+Recognition:
+
+Question contains:
+- Maximum Product
+- Contiguous Subarray
+- Negative Numbers
+
+Think:
+
+Track Maximum Product
+
+↓
+
+Track Minimum Product
+
+↓
+
+Swap on Negative Number
+
+↓
+
+Update Answer
+
+Key Idea:
+
+A negative number can turn the smallest product into the largest product.
+
+Maintain both the current maximum and current minimum product while traversing the array.
+
+---
+
+## Arrays - Merge Intervals
+
+Problem:
+- #56 Merge Intervals
+
+Pattern:
+Sorting + Interval Merging
+
+Recognition:
+
+Question contains:
+- Merge Intervals
+- Overlapping Intervals
+- Meeting Schedule
+- Range Merging
+
+Think:
+
+Sort Intervals
+
+↓
+
+Compare Current Interval
+
+↓
+
+Overlap?
+
+↓
+
+Merge
+
+↓
+
+Otherwise Add New Interval
+
+Key Idea:
+
+Sorting places overlapping intervals together.
+
+If the current interval overlaps with the previous merged interval, extend its ending point.
+
+Otherwise, start a new interval.
