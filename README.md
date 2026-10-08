@@ -4,11 +4,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved: 38
+Total Problems Solved: 40
 
 Easy: 19
 
-Medium: 19
+Medium: 21
 
 Hard: 0
 
@@ -18,47 +18,49 @@ Hard: 0
 
 ### Easy
 
-- Two Sum
-- Palindrome Number
-- Roman to Integer
-- Longest Common Prefix
-- Valid Parentheses
-- Valid Anagram
-- Valid Palindrome
-- Binary Search
-- Best Time to Buy and Sell Stock
-- Contains Duplicate
-- Binary Tree Inorder Traversal
-- Binary Tree Preorder Traversal
-- Binary Tree Postorder Traversal
-- Maximum Depth of Binary Tree
-- Same Tree
-- Symmetric Tree
-- Invert Binary Tree
-- Balanced Binary Tree
-- Count Complete Tree Nodes
+1. Two Sum
+2. Palindrome Number
+3. Roman to Integer
+4. Longest Common Prefix
+5. Valid Parentheses
+6. Valid Anagram
+7. Valid Palindrome
+8. Binary Search
+9. Best Time to Buy and Sell Stock
+10. Contains Duplicate
+11. Binary Tree Inorder Traversal
+12. Binary Tree Preorder Traversal
+13. Binary Tree Postorder Traversal
+14. Maximum Depth of Binary Tree
+15. Same Tree
+16. Symmetric Tree
+17. Invert Binary Tree
+18. Balanced Binary Tree
+19. Count Complete Tree Nodes
 
 ### Medium
 
-- Add Two Numbers
-- Longest Substring Without Repeating Characters
-- Longest Palindromic Substring
-- Zigzag Conversion
-- Group Anagrams
-- Container With Most Water
-- Search in Rotated Sorted Array
-- Find First and Last Position of Element
-- Search a 2D Matrix
-- Find Minimum in Rotated Sorted Array
-- Find Peak Element
-- Diameter of Binary Tree
-- Validate Binary Search Tree
-- Binary Tree Right Side View
-- Construct Binary Tree from Preorder and Inorder Traversal
-- Product of Array Except Self
-- Maximum Subarray
-- Maximum Product Subarray
-- Merge Intervals
+1. Add Two Numbers
+2. Longest Substring Without Repeating Characters
+3. Longest Palindromic Substring
+4. Zigzag Conversion
+5. Group Anagrams
+6. Container With Most Water
+7. Search in Rotated Sorted Array
+8. Find First and Last Position of Element in Sorted Array
+9. Search a 2D Matrix
+10. Find Minimum in Rotated Sorted Array
+11. Find Peak Element
+12. Diameter of Binary Tree
+13. Validate Binary Search Tree
+14. Binary Tree Right Side View
+15. Construct Binary Tree from Preorder and Inorder Traversal
+16. Product of Array Except Self
+17. Maximum Subarray
+18. Maximum Product Subarray
+19. Merge Intervals
+20. Insert Interval
+21. Rotate Image
 
 ### Hard
 
@@ -77,6 +79,8 @@ Hard: 0
 - [x] Two Pointers
 - [x] Binary Search
 - [x] Trees
+- [x] Intervals
+- [x] Matrix
 - [ ] Heap
 - [ ] Graphs
 - [ ] Backtracking
@@ -92,4 +96,6 @@ Completed 20 Problems
 
 Completed 30 Problems
 
-Next Target: 40 Problems
+Completed 40 Problems
+
+Next Target: 50 Problemss

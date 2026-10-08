@@ -933,3 +933,144 @@ Sorting places overlapping intervals together.
 If the current interval overlaps with the previous merged interval, extend its ending point.
 
 Otherwise, start a new interval.
+
+## Arrays - Insert Interval
+
+Problem:
+- #57 Insert Interval
+
+Pattern:
+Interval Merging
+
+Recognition:
+
+Question contains:
+- Intervals
+- Overlapping ranges
+- Insert a new interval
+- Merge overlapping intervals
+
+Think:
+
+Process intervals in order
+
+↓
+
+Intervals completely before new interval?
+
+↓
+
+Add them
+
+↓
+
+Overlap with new interval?
+
+↓
+
+Merge
+
+↓
+
+Add remaining intervals
+
+Key Idea:
+
+Because the intervals are already sorted by starting time, process them from left to right.
+
+There are three cases:
+
+1. Current interval ends before the new interval starts.
+2. Current interval overlaps with the new interval.
+3. Current interval starts after the new interval ends.
+
+During overlap, update the new interval using:
+
+- minimum starting point
+- maximum ending point
+
+Then add the merged interval to the result.
+
+
+## Arrays - Rotate Image
+
+Problem:
+- #48 Rotate Image
+
+Pattern:
+Matrix Transformation
+
+Recognition:
+
+Question contains:
+- Rotate matrix
+- Rotate image
+- 90 degree clockwise
+- Modify matrix in-place
+
+Think:
+
+Transpose Matrix
+
+↓
+
+Reverse Every Row
+
+↓
+
+90 Degree Clockwise Rotation
+
+Key Idea:
+
+A matrix can be rotated 90 degrees clockwise in two steps:
+
+1. Transpose the matrix.
+2. Reverse every row.
+
+Example:
+
+1 2 3
+4 5 6
+7 8 9
+
+↓
+
+Transpose
+
+1 4 7
+2 5 8
+3 6 9
+
+↓
+
+Reverse each row
+
+7 4 1
+8 5 2
+9 6 3
+
+The rotation is performed in-place without creating another matrix.
+
+
+## Pattern Recognition Added
+
+Interval Problems:
+
+Sort or process intervals
+
+↓
+
+Check overlap
+
+↓
+
+Merge when necessary
+
+
+Matrix Rotation:
+
+Transpose
+
+↓
+
+Reverse Rows
