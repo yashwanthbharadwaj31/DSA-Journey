@@ -1074,3 +1074,142 @@ Transpose
 ↓
 
 Reverse Rows
+
+## Arrays - Merge Sorted Array
+
+**Problem:**
+- #88 Merge Sorted Array
+
+**Pattern:**
+
+Two Pointers — Start from the End
+
+**Recognition:**
+
+Look for:
+- Two sorted arrays
+- Merging arrays in sorted order
+- Modifying an array in-place
+- Extra capacity at the end of the first array
+
+**Think:**
+
+Initialize pointers at the ends of the valid portions of both arrays.
+
+↓
+
+Compare the current elements.
+
+↓
+
+Place the larger element at the last available position.
+
+↓
+
+Move the corresponding pointer backward.
+
+↓
+
+Continue until all elements from the second array are placed.
+
+**Key Idea:**
+
+Fill the first array from right to left to avoid overwriting elements that have not been processed.
+
+The second array's pointer determines when the merge is complete.
+
+**Complexity:**
+- Time: O(m + n)
+- Auxiliary Space: O(1)
+
+---
+
+## Arrays - Sort Colors
+
+**Problem:**
+- #75 Sort Colors
+
+**Pattern:**
+
+Three Pointers — Dutch National Flag
+
+**Recognition:**
+
+Look for:
+- An array containing only 0, 1, and 2
+- Sorting without using a built-in sorting function
+- In-place sorting in one pass
+
+**Think:**
+
+Maintain three pointers:
+
+- `low`: boundary for 0s
+- `mid`: current element being examined
+- `high`: boundary for 2s
+
+↓
+
+If `nums[mid] == 0`, swap it with `nums[low]` and increment both `low` and `mid`.
+
+↓
+
+If `nums[mid] == 1`, increment `mid`.
+
+↓
+
+If `nums[mid] == 2`, swap it with `nums[high]` and decrement `high`.
+
+↓
+
+Continue while `mid <= high`.
+
+**Key Idea:**
+
+Maintain three regions:
+
+- Before `low`: all 0s
+- Between `low` and `mid`: all 1s
+- After `high`: all 2s
+
+When swapping with `high`, do not increment `mid` immediately because the incoming element still needs to be examined.
+
+Complexity:
+- Time: O(n)
+- Auxiliary Space: O(1)
+
+---
+
+## Pattern Recognition Added
+
+Merging Sorted Arrays:
+
+Two sorted arrays
+
+↓
+
+Compare from the end
+
+↓
+
+Place the larger element
+
+↓
+
+Move pointers backward
+
+Sorting Three Distinct Values:
+
+Three pointers
+
+↓
+
+Classify the current element
+
+↓
+
+Swap into the correct region
+
+↓
+
+Maintain the invariant until sorted
