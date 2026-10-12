@@ -1213,3 +1213,140 @@ Swap into the correct region
 ↓
 
 Maintain the invariant until sorted
+
+## Arrays - Jump Game
+
+Problem:
+- #55 Jump Game
+
+**Pattern:**
+
+Greedy
+
+Recognition:
+
+Look for:
+- An array representing maximum jump lengths
+- Determining whether the final index is reachable
+- No requirement to find the exact jump sequence
+- Reachability rather than minimum jumps
+
+Think:
+
+Initialize `farthest = 0`.
+
+↓
+
+Check each index from left to right.
+
+↓
+
+If the current index is greater than `farthest`, return `False`.
+
+↓
+
+Update the farthest reachable index.
+
+↓
+
+If the last index is reachable, return `True`.
+
+Key Idea:
+
+Track the furthest index reachable from any position visited so far.
+
+At index `i`, the maximum reach is `i + nums[i]`.
+
+Update the reach using:
+
+`farthest = max(farthest, i + nums[i])`
+
+If the current index lies beyond `farthest`, it cannot be reached.
+
+Complexity:
+- Time: O(n)
+- Auxiliary Space: O(1)
+
+---
+
+## Hashing - Majority Element
+
+Problem:
+- #169 Majority Element
+
+Pattern:
+
+Boyer-Moore Voting Algorithm
+
+Recognition:
+
+Look for:
+- An element appearing more than half the time
+- A guaranteed majority element
+- A linear-time, constant-space solution
+
+**Think:**
+
+Initialize `candidate = None` and `count = 0`.
+
+↓
+
+If `count == 0`, choose the current number as the candidate.
+
+↓
+
+If the current number matches the candidate, increment `count`.
+
+↓
+
+Otherwise, decrement `count`.
+
+↓
+
+Return the final candidate.
+
+Key Idea:
+
+Different elements cancel each other out.
+
+Because a majority element appears more than half the time, it cannot be completely cancelled by all other elements.
+
+The final candidate is therefore the majority element.
+
+The algorithm relies on the problem's guarantee that a majority element exists.
+
+Complexity:
+- Time: O(n)
+- Auxiliary Space: O(1)
+
+---
+
+## Pattern Recognition Added
+
+Reachability Problems:
+
+Track the furthest reachable position.
+
+↓
+
+Check whether the current position is reachable.
+
+↓
+
+Extend the reachable boundary.
+
+Majority Element Problems:
+
+Maintain a candidate and a counter.
+
+↓
+
+Matching element increases the counter.
+
+↓
+
+Different element decreases the counter.
+
+↓
+
+The guaranteed majority survives cancellation.

@@ -4,10 +4,10 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 42
+**Total Problems Solved:** 44
 
-- Easy: 20
-- Medium: 22
+- Easy: 21
+- Medium: 23
 - Hard: 0
 
 ---
@@ -36,6 +36,7 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 18. [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
 19. [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 20. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+21. [Majority Element](https://leetcode.com/problems/majority-element/)
 
 ### Medium
 
@@ -61,6 +62,7 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 20. [Insert Interval](https://leetcode.com/problems/insert-interval/)
 21. [Rotate Image](https://leetcode.com/problems/rotate-image/)
 22. [Sort Colors](https://leetcode.com/problems/sort-colors/)
+23. [Jump Game](https://leetcode.com/problems/jump-game/)
 
 ### Hard
 
@@ -81,6 +83,7 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 - [x] Trees
 - [x] Intervals
 - [x] Matrix
+- [x] Greedy
 - [ ] Heap
 - [ ] Graphs
 - [ ] Backtracking
