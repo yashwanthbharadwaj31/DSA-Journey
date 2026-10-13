@@ -1350,3 +1350,141 @@ Different element decreases the counter.
 ↓
 
 The guaranteed majority survives cancellation.
+
+## Binary Search - Search Insert Position
+
+Problem:
+- #35 Search Insert Position
+
+Pattern:
+
+Binary Search
+
+Recognition:
+
+Look for:
+- A sorted array
+- Finding a target's index
+- Returning the correct insertion position if the target is absent
+
+Think:
+
+Initialize `left = 0` and `right = len(nums) - 1`.
+
+↓
+
+Calculate the middle index.
+
+↓
+
+If the middle element equals the target, return `mid`.
+
+↓
+
+If the middle element is smaller, search the right half.
+
+↓
+
+Otherwise, search the left half.
+
+↓
+
+If the target is absent, return `left`.
+
+Key Idea:
+
+Binary search repeatedly halves the search space.
+
+When the loop finishes without finding the target, `left` identifies the correct insertion position that preserves sorted order.
+
+Complexity:
+- Time: O(log n)
+- Auxiliary Space: O(1)
+
+---
+
+## Linked List - Reverse Linked List
+
+Problem:
+- #206 Reverse Linked List
+
+Pattern:
+
+Iterative Pointer Manipulation
+
+Recognition:
+
+Look for:
+- Reversing a singly linked list
+- Changing the direction of `next` pointers
+- An in-place solution
+
+Think:
+
+Initialize `prev = None` and `current = head`.
+
+↓
+
+Save `current.next` in `next_node`.
+
+↓
+
+Reverse the pointer using `current.next = prev`.
+
+↓
+
+Move `prev` to `current`.
+
+↓
+
+Move `current` to `next_node`.
+
+↓
+
+Repeat until `current` becomes `None`.
+
+↓
+
+Return `prev`.
+
+**Key Idea:**
+
+Reverse one pointer at a time.
+
+Always save the next node before changing the current pointer, or the remaining list will become inaccessible.
+
+Complexity:
+- Time: O(n)
+- Auxiliary Space: O(1)
+
+---
+
+## Pattern Recognition Added
+
+Sorted Array Search:
+
+Check the middle element.
+
+↓
+
+Eliminate half the search space.
+
+↓
+
+Repeat until found or the insertion position is identified.
+
+Linked List Reversal:
+
+Save the next node.
+
+↓
+
+Reverse the current pointer.
+
+↓
+
+Advance both pointers.
+
+↓
+
+Return the new head.

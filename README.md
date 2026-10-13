@@ -4,10 +4,10 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 44
+**Total Problems Solved:** 46
 
-- Easy: 21
-- Medium: 23
+- Easy: 24
+- Medium: 22
 - Hard: 0
 
 ---
@@ -37,6 +37,8 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 19. [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 20. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 21. [Majority Element](https://leetcode.com/problems/majority-element/)
+22. [Search Insert Position](https://leetcode.com/problems/search-insert-position/)
+23. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
 
 ### Medium
 
