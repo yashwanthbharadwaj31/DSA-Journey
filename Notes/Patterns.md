@@ -1488,3 +1488,139 @@ Advance both pointers.
 ↓
 
 Return the new head.
+
+## Stack - Daily Temperatures
+
+Problem:
+- #739 Daily Temperatures
+
+Pattern:
+
+Monotonic Stack
+
+Recognition:
+
+Look for:
+- Finding the next greater element
+- Finding the next warmer day
+- Calculating the distance to the next qualifying element
+- Resolving previous elements when a better element appears
+
+Think:
+
+Initialize a result array with zeros.
+
+↓
+
+Traverse the temperatures from left to right.
+
+↓
+
+Store indices of unresolved days in a stack.
+
+↓
+
+If the current temperature is greater than the temperature at the top index, pop that index.
+
+↓
+
+Calculate the waiting time using the current index minus the popped index.
+
+↓
+
+Repeat until the stack is empty or the current temperature is not warmer.
+
+↓
+
+Push the current index.
+
+Key Idea:
+
+The stack stores indices of days whose next warmer day has not yet been found.
+
+When a warmer temperature appears, it resolves the answer for earlier days. Each index is pushed and popped at most once.
+
+Complexity:
+- Time: O(n)
+- Auxiliary Space: O(n)
+
+---
+
+## Dynamic Programming - House Robber
+
+Problem:
+- #198 House Robber
+
+Pattern:
+
+Dynamic Programming with Space Optimization
+
+Recognition:
+
+Look for:
+- Maximizing profit or value
+- Selecting elements without selecting adjacent elements
+- Choosing between taking and skipping the current element
+
+Think:
+
+Initialize `prev2 = 0` and `prev1 = 0`.
+
+↓
+
+For each house, calculate:
+
+`current = max(prev1, prev2 + money)`
+
+↓
+
+Update `prev2 = prev1`.
+
+↓
+
+Update `prev1 = current`.
+
+↓
+
+Return `prev1`.
+
+Key Idea:
+
+At each house, choose between:
+
+1. Skipping the current house and keeping the best total so far.
+2. Robbing the current house and adding its value to the best total from two houses back.
+
+Only the previous two results are needed, so a separate DP array is unnecessary.
+
+Complexity:
+- Time: O(n)
+- Auxiliary Space: O(1)
+
+---
+
+## Pattern Recognition Added
+
+Next Greater Element:
+
+Maintain a monotonic stack.
+
+↓
+
+Compare the current element with earlier unresolved elements.
+
+↓
+
+Resolve earlier answers when a greater element appears.
+
+Take or Skip:
+
+Calculate the best result at each position.
+
+↓
+
+Compare skipping the current element with taking it.
+
+↓
+
+Reuse previous results to avoid repeated calculations.

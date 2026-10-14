@@ -4,10 +4,10 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 46
+Total Problems Solved:48
 
-- Easy: 24
-- Medium: 22
+- Easy: 22
+- Medium: 26
 - Hard: 0
 
 ---
@@ -65,6 +65,9 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 21. [Rotate Image](https://leetcode.com/problems/rotate-image/)
 22. [Sort Colors](https://leetcode.com/problems/sort-colors/)
 23. [Jump Game](https://leetcode.com/problems/jump-game/)
+24. [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
+25. [House Robber](https://leetcode.com/problems/house-robber/)
+26. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
 
 ### Hard
 
@@ -86,10 +89,11 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 - [x] Intervals
 - [x] Matrix
 - [x] Greedy
+- [x] Dynamic Programming
 - [ ] Heap
 - [ ] Graphs
 - [ ] Backtracking
-- [ ] Dynamic Programming
+- [ ] Queue
 
 ---
 
