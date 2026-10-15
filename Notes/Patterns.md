@@ -1624,3 +1624,117 @@ Compare skipping the current element with taking it.
 ↓
 
 Reuse previous results to avoid repeated calculations.
+
+## Trees - Binary Tree Level Order Traversal
+
+Problem:
+- #102 Binary Tree Level Order Traversal
+
+Pattern:
+
+Breadth-First Search (BFS)
+
+Recognition:
+
+Look for:
+- Traversing a tree level by level
+- Grouping nodes by depth
+- Processing nodes in the order they are discovered
+
+Think:
+
+Initialize a queue with the root node.
+
+↓
+
+Record the number of nodes at the current level.
+
+↓
+
+Process exactly that many nodes.
+
+↓
+
+Add their children to the queue.
+
+↓
+
+Append the current level to the result.
+
+Key Idea:
+
+BFS uses a first-in, first-out queue. Processing a fixed number of nodes per iteration keeps each tree level separate.
+
+Complexity:
+- Time: O(n)
+- Auxiliary Space: O(n)
+
+---
+
+## Heap - Top K Frequent Elements
+
+Problem:
+- #347 Top K Frequent Elements
+
+Pattern:
+
+Hash Map + Min Heap
+
+Recognition:
+
+Look for:
+- Finding the most frequent elements
+- Returning the top K values
+- Maintaining a limited set of candidates
+
+Think:
+
+Count the frequency of every number.
+
+↓
+
+Insert each number and its frequency into a min heap.
+
+↓
+
+If the heap contains more than K elements, remove the smallest frequency.
+
+↓
+
+Return the remaining K elements.
+
+Key Idea:
+
+The min heap maintains the K most frequent candidates by removing the smallest frequency whenever its size exceeds K.
+
+Complexity:
+- Time: O(n log k)
+- Auxiliary Space: O(n + k)
+
+---
+
+## Pattern Recognition Added
+
+Tree Level Traversal:
+
+Initialize a queue.
+
+↓
+
+Process nodes level by level.
+
+↓
+
+Enqueue children for the next level.
+
+Top K Frequent Elements:
+
+Count frequencies.
+
+↓
+
+Maintain a min heap of size K.
+
+↓
+
+Remove the smallest frequency when necessary.

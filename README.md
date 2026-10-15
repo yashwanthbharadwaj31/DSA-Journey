@@ -4,10 +4,10 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-Total Problems Solved:48
+Total Problems Solved: 50
 
 - Easy: 22
-- Medium: 26
+- Medium: 28
 - Hard: 0
 
 ---
@@ -53,21 +53,23 @@ Total Problems Solved:48
 9. [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
 10. [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 11. [Find Peak Element](https://leetcode.com/problems/find-peak-element/)
-12. [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
-13. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
-14. [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
-15. [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
-16. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
-17. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
-18. [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
-19. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
-20. [Insert Interval](https://leetcode.com/problems/insert-interval/)
-21. [Rotate Image](https://leetcode.com/problems/rotate-image/)
-22. [Sort Colors](https://leetcode.com/problems/sort-colors/)
-23. [Jump Game](https://leetcode.com/problems/jump-game/)
-24. [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
-25. [House Robber](https://leetcode.com/problems/house-robber/)
+12. [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+13. [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+14. [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+15. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+16. [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+17. [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/)
+18. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+19. [Insert Interval](https://leetcode.com/problems/insert-interval/)
+20. [Rotate Image](https://leetcode.com/problems/rotate-image/)
+21. [Sort Colors](https://leetcode.com/problems/sort-colors/)
+22. [Jump Game](https://leetcode.com/problems/jump-game/)
+23. [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
+24. [House Robber](https://leetcode.com/problems/house-robber/)
+25. [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
 26. [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+27. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+28. [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)
 
 ### Hard
 
@@ -90,7 +92,7 @@ Total Problems Solved:48
 - [x] Matrix
 - [x] Greedy
 - [x] Dynamic Programming
-- [ ] Heap
+- [x] Heap
 - [ ] Graphs
 - [ ] Backtracking
 - [ ] Queue
@@ -103,5 +105,6 @@ Total Problems Solved:48
 - Completed 20 Problems
 - Completed 30 Problems
 - Completed 40 Problems
+- Completed 50 Problems
 
-Next Target: 50 Problems
+Next Target: 60 Problems
