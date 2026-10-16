@@ -4,7 +4,7 @@ Documenting my Data Structures & Algorithms journey through LeetCode using Pytho
 
 ## Progress
 
-**Total Problems Solved:** 52
+Total Problems Solved: 52
 
 - Easy: 22
 - Medium: 30
