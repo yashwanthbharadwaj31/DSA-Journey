@@ -1738,3 +1738,129 @@ Maintain a min heap of size K.
 ↓
 
 Remove the smallest frequency when necessary.
+
+## Hashing - Subarray Sum Equals K
+
+Problem:
+- #560 Subarray Sum Equals K
+
+Pattern:
+
+Prefix Sum + Hash Map
+
+Recognition:
+
+Look for:
+- Counting continuous subarrays
+- Finding subarrays with a target sum
+- Negative numbers that make sliding window unsuitable in the general case
+
+Think:
+
+Initialize `prefix_sum = 0`, `count = 0`, and `prefix_counts = {0: 1}`.
+
+↓
+
+Add each number to the running prefix sum.
+
+↓
+
+Calculate `needed = prefix_sum - k`.
+
+↓
+
+Add the frequency of `needed` to the answer.
+
+↓
+
+Record the current prefix sum frequency.
+
+Key Idea:
+
+If the current prefix sum is `P`, a previous prefix sum of `P - k` means the elements between those positions sum to `k`.
+
+Complexity:
+- Time: O(n) average
+- Auxiliary Space: O(n)
+
+---
+
+## Backtracking - Subsets
+
+Problem:
+- #78 Subsets
+
+Pattern:
+
+Backtracking
+
+Recognition:
+
+Look for:
+- Generating all possible subsets
+- Exploring combinations of distinct elements
+- Making a choice, exploring it, and undoing the choice
+
+Think:
+
+Start with an empty subset.
+
+↓
+
+Add a copy of the current subset to the result.
+
+↓
+
+Loop through the remaining elements.
+
+↓
+
+Choose an element and add it to the current subset.
+
+↓
+
+Recursively explore further subsets.
+
+↓
+
+Remove the element and explore another choice.
+
+Key Idea:
+
+Backtracking systematically explores all valid choices. `current.pop()` undoes the last choice so that another branch can be explored.
+
+Complexity:
+- Time: O(n × 2ⁿ)
+- Auxiliary Space: O(n), excluding output
+
+---
+
+## Pattern Recognition Added
+
+Subarray Sum:
+
+Maintain a running prefix sum.
+
+↓
+
+Look up the required previous prefix sum.
+
+↓
+
+Count matching prefixes.
+
+Subset Generation:
+
+Choose an element.
+
+↓
+
+Explore the resulting subset.
+
+↓
+
+Undo the choice.
+
+↓
+
+Explore the remaining alternatives.
