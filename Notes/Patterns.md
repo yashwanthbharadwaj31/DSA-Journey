@@ -1864,3 +1864,50 @@ Undo the choice.
 ↓
 
 Explore the remaining alternatives.
+
+## 1. Longest Repeating Character Replacement
+
+**LeetCode:** #424  
+**Pattern:** Variable-Size Sliding Window
+
+### Recognition
+The problem asks for the longest substring satisfying a condition, with at most `k` replacements.
+
+### Think
+Maintain a window and track the most frequent character. The remaining characters are the replacements needed.
+
+### Key Idea
+A window is valid when:
+
+`window_length - max_frequency <= k`
+
+Expand the right pointer. If the condition becomes invalid, move the left pointer forward.
+
+### Complexity
+- Time: O(n)
+- Space: O(1) for uppercase English letters
+
+---
+
+## 2. Find the Duplicate Number
+
+**LeetCode:** #287  
+**Pattern:** Fast and Slow Pointers, Floyd's Cycle Detection
+
+### Recognition
+The array contains `n + 1` values from `1` to `n`. A duplicate exists, and the problem requires constant extra space without modifying the array.
+
+### Think
+Treat each value as a pointer to another array index. The duplicate creates a cycle in this pointer sequence.
+
+### Key Idea
+1. Move the slow pointer one step and the fast pointer two steps until they meet.
+2. Reset one pointer to the starting position.
+3. Move both pointers one step at a time. Their next meeting point identifies the duplicate.
+
+### Complexity
+- Time: O(n)
+- Space: O(1)
+
+### Common Mistake
+Do not use a set or sort the array. Those approaches violate the problem's extra-space or modification constraints.
