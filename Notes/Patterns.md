@@ -1911,3 +1911,78 @@ Treat each value as a pointer to another array index. The duplicate creates a cy
 
 ### Common Mistake
 Do not use a set or sort the array. Those approaches violate the problem's extra-space or modification constraints.
+
+## Single Number
+
+**LeetCode:** #136  
+**Difficulty:** Easy  
+**Pattern:** Bit Manipulation using XOR  
+**Folder:** `Arrays/Single_Number.py`
+
+### Recognition
+
+Every number appears twice except one. The problem asks for the unique number with constant extra space.
+
+### Think
+
+XOR has three useful properties:
+
+- `a ^ a = 0`
+- `a ^ 0 = a`
+- XOR is commutative and associative.
+
+### Key Idea
+
+XOR every element in the array. Duplicate values cancel each other, leaving the unique number.
+
+```python
+result = 0
+
+for num in nums:
+    result ^= num
+
+return result
+```
+
+### Complexity
+
+- Time: O(n)
+- Space: O(1)
+
+### Common Mistake
+
+Using a set or frequency dictionary when the XOR approach solves the problem with constant extra space.
+
+---
+
+## Trapping Rain Water
+
+**LeetCode:** #42  
+**Difficulty:** Hard  
+**Pattern:** Two Pointers and Running Maximums  
+**Folder:** `TwoPointers/Trapping_Rain_Water.py`
+
+### Recognition
+
+The problem asks how much water can be trapped between bars of different heights.
+
+### Think
+
+Water at a position depends on the maximum height to its left and right. The water level is limited by the shorter of those two boundaries.
+
+### Key Idea
+
+1. Start with pointers at both ends.
+2. Maintain `left_max` and `right_max`.
+3. Process the side with the smaller current height.
+4. Add the difference between that side's maximum and current height when water can be trapped.
+5. Move the pointer inward and continue.
+
+### Complexity
+
+- Time: O(n)
+- Space: O(1)
+
+### Common Mistake
+
+Moving a pointer without updating its running maximum, or calculating trapped water using the taller boundary instead of the limiting shorter boundary.
