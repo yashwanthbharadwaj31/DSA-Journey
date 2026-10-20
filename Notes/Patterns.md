@@ -1986,3 +1986,127 @@ Water at a position depends on the maximum height to its left and right. The wat
 ### Common Mistake
 
 Moving a pointer without updating its running maximum, or calculating trapped water using the taller boundary instead of the limiting shorter boundary.
+
+## Missing Number
+
+**LeetCode:** #268  
+**Difficulty:** Easy  
+**Pattern:** Mathematical Sum  
+**File:** `Arrays/Missing_Number.py`  
+**Day:** 29
+
+### Recognition
+
+An array contains distinct numbers from `0` to `n`, with one number missing.
+
+### Think
+
+Calculate the expected sum of the complete range and subtract the actual array sum.
+
+### Key Idea
+
+The sum of integers from `0` to `n` is:
+
+`n * (n + 1) // 2`
+
+Subtract the sum of the given array to obtain the missing number.
+
+### Complexity
+
+- Time: O(n)
+- Auxiliary space: O(1)
+
+---
+
+## First Missing Positive
+
+**LeetCode:** #41  
+**Difficulty:** Hard  
+**Pattern:** Index Placement / Cyclic Sort  
+**File:** `Arrays/First_Missing_Positive.py`  
+**Day:** 29
+
+### Recognition
+
+Find the smallest missing positive integer in an unsorted array in O(n) time and O(1) auxiliary space.
+
+### Think
+
+A valid value `x` between `1` and `n` belongs at index `x - 1`.
+
+### Key Idea
+
+Place each valid value at its corresponding index. Scan the array afterward. The first index `i` where `nums[i] != i + 1` identifies the missing positive as `i + 1`.
+
+If every position is correct, return `n + 1`.
+
+### Complexity
+
+- Time: O(n)
+- Auxiliary space: O(1)
+
+### Important Detail
+
+The algorithm modifies the input array in place.
+
+---
+
+## Climbing Stairs
+
+**LeetCode:** #70  
+**Difficulty:** Easy  
+**Pattern:** Fibonacci / Space-Optimized Dynamic Programming  
+**File:** `DynamicProgramming/Climbing_Stairs.py`  
+**Day:** 30
+
+### Recognition
+
+Count the distinct ways to reach step `n` when each move can climb one or two steps.
+
+### Think
+
+The final move must come from either step `n - 1` or step `n - 2`.
+
+### Key Idea
+
+`ways(n) = ways(n - 1) + ways(n - 2)`
+
+Maintain only the previous two results instead of storing an entire DP array.
+
+### Complexity
+
+- Time: O(n)
+- Auxiliary space: O(1)
+
+---
+
+## Kth Largest Element in an Array
+
+**LeetCode:** #215  
+**Difficulty:** Medium  
+**Pattern:** Min-Heap of Size K  
+**File:** `Heap/Kth_Largest_Element_in_an_Array.py`  
+**Day:** 30
+
+### Recognition
+
+Find the kth largest element without sorting the entire array.
+
+### Think
+
+Maintain a min-heap containing only the `k` largest values encountered so far.
+
+### Key Idea
+
+1. Push each number into the heap.
+2. If the heap contains more than `k` elements, remove the smallest.
+3. After processing every number, the heap root is the kth largest element.
+
+### Complexity
+
+- Time: O(n log k)
+- Auxiliary space: O(k)
+
+### Important Detail
+
+The kth largest element is based on sorted order, not the kth distinct value.

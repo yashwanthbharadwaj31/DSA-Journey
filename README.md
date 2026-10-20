@@ -2,18 +2,17 @@
 
 Documenting my Data Structures and Algorithms journey through LeetCode using Python.
 
-My goal is to strengthen problem-solving skills, understand common DSA patterns, and build a consistent coding practice.
+The goal is to develop strong problem-solving skills, understand common DSA patterns, and build consistency through daily practice.
 
 ## Progress
 
-Total Problems Solved: 56
+Total Problems Solved: 60
 
-- Easy: 23
-- Medium: 32
-- Hard: 1
-
-**Current Day:** 28  
-**Next Milestone:** 60 Problems
+- Easy: 25
+- Medium: 33
+- Hard: 2
+  
+Next Milestone: 70 Problems
 
 ---
 
@@ -21,6 +20,10 @@ Total Problems Solved: 56
 
 | Day | Problem | LeetCode | Difficulty | Pattern |
 |---|---|---|---|---|
+| 29 | Missing Number | #268 | Easy | Mathematical Sum |
+| 29 | First Missing Positive | #41 | Hard | Index Placement |
+| 30 | Climbing Stairs | #70 | Easy | Dynamic Programming |
+| 30 | Kth Largest Element in an Array | #215 | Medium | Min-Heap |
 | 28 | Single Number | #136 | Easy | Bit Manipulation |
 | 28 | Trapping Rain Water | #42 | Hard | Two Pointers |
 | 27 | Longest Repeating Character Replacement | #424 | Medium | Sliding Window |
@@ -54,17 +57,6 @@ Total Problems Solved: 56
 
 ---
 
-## Milestones
-
-- [x] 10 Problems
-- [x] 20 Problems
-- [x] 30 Problems
-- [x] 40 Problems
-- [x] 50 Problems
-- [ ] 60 Problems
-
----
-
 ## Repository Structure
 
 ```text
@@ -88,19 +80,35 @@ DSA-Journey/
 └── README.md
 ```
 
+---
+
 ## Learning Approach
 
 For every problem, I aim to:
 
 1. Understand the problem statement.
-2. Identify the appropriate pattern.
+2. Identify the relevant DSA pattern.
 3. Develop and implement a Python solution.
 4. Analyse time and space complexity.
 5. Document the key insight in my notes.
 6. Commit the solution to GitHub.
 
+---
+
+## Milestones
+
+- [x] 10 Problems
+- [x] 20 Problems
+- [x] 30 Problems
+- [x] 40 Problems
+- [x] 50 Problems
+- [x] 60 Problems
+- [ ] 70 Problems
+
+---
+
 ## Goal
 
-Continue practising consistently, improve my understanding of DSA patterns, and prepare for technical interviews after completing 60 problems.
+Continue practising consistently, strengthen problem-solving skills, and prepare for technical interviews after completing the 60-problem milestone.
 
-Next Target: 60 Problems
+Next Target: 70 Problems
