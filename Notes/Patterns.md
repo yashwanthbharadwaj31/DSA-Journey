@@ -2110,3 +2110,79 @@ Maintain a min-heap containing only the `k` largest values encountered so far.
 ### Important Detail
 
 The kth largest element is based on sorted order, not the kth distinct value.
+
+## Counting Bits
+
+**LeetCode:** #338  
+**Difficulty:** Easy  
+**Pattern:** Bit Manipulation and Dynamic Programming  
+**File:** `DynamicProgramming/Counting_Bits.py`  
+**Day:** 31
+
+### Recognition
+
+Return the number of set bits for every integer from `0` through `n`.
+
+### Think
+
+The number of set bits in a number can be derived from a smaller number by removing its lowest set bit.
+
+### Key Idea
+
+Use:
+
+`ans[i] = ans[i & (i - 1)] + 1`
+
+The operation `i & (i - 1)` clears the lowest set bit. The resulting number is smaller than `i`, so its answer has already been calculated.
+
+### Complexity
+
+- Time: O(n)
+- Space: O(n), including the required output array
+- Auxiliary space beyond the output: O(1)
+
+### Common Mistake
+
+Recounting every bit independently when previous answers can be reused.
+
+---
+
+## LRU Cache
+
+**LeetCode:** #146  
+**Difficulty:** Medium  
+**Pattern:** Hash Map and Doubly Linked List  
+**File:** `LinkedList/LRU_Cache.py`  
+**Day:** 31
+
+### Recognition
+
+Design a fixed-capacity cache that supports retrieval and updates while evicting the least recently used entry.
+
+### Think
+
+A dictionary provides fast key lookup, while a doubly linked list maintains usage order.
+
+### Key Idea
+
+- Store each key's node in a dictionary.
+- Keep the most recently used node at the front.
+- Move a node to the front after a successful `get` or an update.
+- Evict the node immediately before the tail when capacity is exceeded.
+- Use dummy head and tail nodes to simplify pointer operations.
+
+### Complexity
+
+- `get`: O(1) average time
+- `put`: O(1) average time
+- Space: O(capacity)
+
+### Common Mistakes
+
+- Forgetting to update both neighboring pointers when removing a node.
+- Evicting the most recently used node instead of the least recently used node.
+- Creating duplicate nodes when updating an existing key.
+
+### Implementation Note
+
+The current solution uses a custom dictionary and doubly linked list. Its asymptotic complexity is optimal for the required operations, although actual runtime percentiles can vary across submissions.

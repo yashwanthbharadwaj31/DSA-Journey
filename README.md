@@ -2,16 +2,15 @@
 
 Documenting my Data Structures and Algorithms journey through LeetCode using Python.
 
-The goal is to develop strong problem-solving skills, understand common DSA patterns, and build consistency through daily practice.
+My goal is to strengthen problem-solving skills, understand common DSA patterns, and build consistency through daily practice.
 
 ## Progress
 
-Total Problems Solved: 60
+Total Problems Solved: 62
 
 - Easy: 25
-- Medium: 33
-- Hard: 2
-  
+- Medium: 34
+- Hard: 3
 Next Milestone: 70 Problems
 
 ---
@@ -20,6 +19,8 @@ Next Milestone: 70 Problems
 
 | Day | Problem | LeetCode | Difficulty | Pattern |
 |---|---|---|---|---|
+| 31 | Counting Bits | #338 | Easy | Bit Manipulation and Dynamic Programming |
+| 31 | LRU Cache | #146 | Medium | Hash Map and Doubly Linked List |
 | 29 | Missing Number | #268 | Easy | Mathematical Sum |
 | 29 | First Missing Positive | #41 | Hard | Index Placement |
 | 30 | Climbing Stairs | #70 | Easy | Dynamic Programming |
@@ -30,8 +31,6 @@ Next Milestone: 70 Problems
 | 27 | Find the Duplicate Number | #287 | Medium | Fast and Slow Pointers |
 | 26 | Subarray Sum Equals K | #560 | Medium | Prefix Sum and Hash Map |
 | 26 | Subsets | #78 | Medium | Backtracking |
-| 25 | Binary Tree Level Order Traversal | #102 | Medium | Breadth-First Search |
-| 25 | Top K Frequent Elements | #347 | Medium | Heap and Hash Map |
 
 ---
 
@@ -65,10 +64,12 @@ DSA-Journey/
 ├── Backtracking/
 ├── BinarySearch/
 ├── DynamicProgramming/
+│   └── Counting_Bits.py
 ├── Graphs/
 ├── Hashing/
 ├── Heap/
 ├── LinkedList/
+│   └── LRU_Cache.py
 ├── Notes/
 │   └── Patterns.md
 ├── Queue/
@@ -88,7 +89,7 @@ For every problem, I aim to:
 
 1. Understand the problem statement.
 2. Identify the relevant DSA pattern.
-3. Develop and implement a Python solution.
+3. Develop an efficient Python solution.
 4. Analyse time and space complexity.
 5. Document the key insight in my notes.
 6. Commit the solution to GitHub.
@@ -109,6 +110,6 @@ For every problem, I aim to:
 
 ## Goal
 
-Continue practising consistently, strengthen problem-solving skills, and prepare for technical interviews after completing the 60-problem milestone.
+Continue improving algorithmic thinking, writing efficient Python implementations, and preparing for technical interviews.
 
 Next Target: 70 Problems
