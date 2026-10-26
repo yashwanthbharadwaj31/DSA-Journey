@@ -2,16 +2,18 @@
 
 Documenting my Data Structures and Algorithms journey through LeetCode using Python.
 
-My goal is to strengthen problem-solving skills, understand common DSA patterns, and build consistency through daily practice.
+My goal is to strengthen problem-solving skills, recognize common DSA patterns, and build consistency through daily practice.
 
 ## Progress
 
-Total Problems Solved: 62
+Total Problems Solved: 66
 
-- Easy: 25
-- Medium: 34
-- Hard: 3
-Next Milestone: 70 Problems
+- Easy: 28
+- Medium: 36
+- Hard: 2
+
+**Current Day:** 33  
+**Next Milestone:** 70 Problems
 
 ---
 
@@ -19,18 +21,18 @@ Next Milestone: 70 Problems
 
 | Day | Problem | LeetCode | Difficulty | Pattern |
 |---|---|---|---|---|
+| 32 | Number of 1 Bits | #191 | Easy | Bit Manipulation |
+| 32 | Longest Increasing Subsequence | #300 | Medium | Binary Search and Greedy |
+| 33 | Is Subsequence | #392 | Easy | Two Pointers |
+| 33 | Minimum Size Subarray Sum | #209 | Medium | Sliding Window |
 | 31 | Counting Bits | #338 | Easy | Bit Manipulation and Dynamic Programming |
 | 31 | LRU Cache | #146 | Medium | Hash Map and Doubly Linked List |
-| 29 | Missing Number | #268 | Easy | Mathematical Sum |
-| 29 | First Missing Positive | #41 | Hard | Index Placement |
 | 30 | Climbing Stairs | #70 | Easy | Dynamic Programming |
 | 30 | Kth Largest Element in an Array | #215 | Medium | Min-Heap |
+| 29 | Missing Number | #268 | Easy | Mathematical Sum |
+| 29 | First Missing Positive | #41 | Hard | Index Placement |
 | 28 | Single Number | #136 | Easy | Bit Manipulation |
 | 28 | Trapping Rain Water | #42 | Hard | Two Pointers |
-| 27 | Longest Repeating Character Replacement | #424 | Medium | Sliding Window |
-| 27 | Find the Duplicate Number | #287 | Medium | Fast and Slow Pointers |
-| 26 | Subarray Sum Equals K | #560 | Medium | Prefix Sum and Hash Map |
-| 26 | Subsets | #78 | Medium | Backtracking |
 
 ---
 
@@ -64,12 +66,10 @@ DSA-Journey/
 ├── Backtracking/
 ├── BinarySearch/
 ├── DynamicProgramming/
-│   └── Counting_Bits.py
 ├── Graphs/
 ├── Hashing/
 ├── Heap/
 ├── LinkedList/
-│   └── LRU_Cache.py
 ├── Notes/
 │   └── Patterns.md
 ├── Queue/
@@ -87,12 +87,13 @@ DSA-Journey/
 
 For every problem, I aim to:
 
-1. Understand the problem statement.
-2. Identify the relevant DSA pattern.
-3. Develop an efficient Python solution.
+1. Understand the problem statement and constraints.
+2. Identify the relevant algorithmic pattern.
+3. Implement an efficient Python solution.
 4. Analyse time and space complexity.
-5. Document the key insight in my notes.
-6. Commit the solution to GitHub.
+5. Test edge cases and evaluate performance.
+6. Document the key insight in my notes.
+7. Commit the solution to GitHub.
 
 ---
 
@@ -110,6 +111,6 @@ For every problem, I aim to:
 
 ## Goal
 
-Continue improving algorithmic thinking, writing efficient Python implementations, and preparing for technical interviews.
+Build strong algorithmic thinking, improve implementation efficiency, and continue progressing toward technical interview readiness.
 
 Next Target: 70 Problems

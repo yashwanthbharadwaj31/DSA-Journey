@@ -2186,3 +2186,139 @@ A dictionary provides fast key lookup, while a doubly linked list maintains usag
 ### Implementation Note
 
 The current solution uses a custom dictionary and doubly linked list. Its asymptotic complexity is optimal for the required operations, although actual runtime percentiles can vary across submissions.
+
+## Number of 1 Bits
+
+**LeetCode:** #191  
+**Difficulty:** Easy  
+**Pattern:** Bit Manipulation  
+**File:** `Arrays/Number_of_1_Bits.py`  
+**Day:** 32
+
+### Recognition
+
+Count the number of set bits in an integer's binary representation.
+
+### Think
+
+Removing the rightmost set bit reduces the number of set bits by exactly one.
+
+### Key Idea
+
+Use Brian Kernighan's algorithm:
+
+`n = n & (n - 1)`
+
+Repeat until `n` becomes zero, counting each operation.
+
+### Complexity
+
+- Time: O(k), where k is the number of set bits; worst case O(w) for a w-bit integer.
+- Auxiliary space: O(1)
+
+### Common Mistake
+
+Checking every bit when the rightmost-set-bit operation can skip zero bits.
+
+---
+
+## Longest Increasing Subsequence
+
+**LeetCode:** #300  
+**Difficulty:** Medium  
+**Pattern:** Binary Search + Greedy Tails  
+**File:** `DynamicProgramming/Longest_Increasing_Subsequence.py`  
+**Day:** 32
+
+### Recognition
+
+Find the length of the longest strictly increasing subsequence without requiring adjacent elements.
+
+### Think
+
+Maintain the smallest possible ending value for an increasing subsequence of each length.
+
+### Key Idea
+
+Use `bisect_left` to find the first position in `tails` whose value is greater than or equal to the current number.
+
+- Append if no such position exists.
+- Otherwise, replace the value at that position.
+
+The length of `tails` gives the answer.
+
+### Complexity
+
+- Time: O(n log n)
+- Auxiliary space: O(n)
+
+### Common Mistake
+
+Treating `tails` as the actual longest subsequence. It maintains useful ending values; its length gives the correct result.
+
+---
+
+## Is Subsequence
+
+**LeetCode:** #392  
+**Difficulty:** Easy  
+**Pattern:** Two Pointers  
+**File:** `Strings/Is_Subsequence.py`  
+**Day:** 33
+
+### Recognition
+
+Determine whether one string can be formed by deleting characters from another string without changing the remaining character order.
+
+### Think
+
+Scan the longer string once while advancing a pointer through the shorter string whenever a character matches.
+
+### Key Idea
+
+- Move through `t` from left to right.
+- Advance the pointer in `s` only when the current characters match.
+- Return True when all characters in `s` have been matched.
+
+### Complexity
+
+- Time: O(len(t))
+- Auxiliary space: O(1)
+
+### Common Mistake
+
+Advancing the pointer in `s` when the characters do not match.
+
+---
+
+## Minimum Size Subarray Sum
+
+**LeetCode:** #209  
+**Difficulty:** Medium  
+**Pattern:** Variable-Size Sliding Window  
+**File:** `SlidingWindow/Minimum_Size_Subarray_Sum.py`  
+**Day:** 33
+
+### Recognition
+
+Find the shortest contiguous subarray whose sum is at least the target, given positive integers.
+
+### Think
+
+Expand the window to increase its sum. Once the sum reaches the target, shrink the window while it remains valid.
+
+### Key Idea
+
+1. Add the rightmost element to the running sum.
+2. While the sum is at least the target, update the minimum length.
+3. Subtract the leftmost element and move the left pointer forward.
+4. Return zero if no valid subarray exists.
+
+### Complexity
+
+- Time: O(n), because each pointer advances at most n times.
+- Auxiliary space: O(1)
+
+### Common Mistake
+
+Applying this exact sliding-window logic to arrays with negative numbers. Negative values break the monotonic relationship between window size and sum.
