@@ -1,3 +1,4 @@
+
 # DSA Journey
 
 Documenting my Data Structures and Algorithms journey through LeetCode using Python.
@@ -6,14 +7,14 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 
 ## Progress
 
-Total Problems Solved: 66
+**Total Problems Solved:** 71
 
 - Easy: 28
-- Medium: 36
+- Medium: 41
 - Hard: 2
 
-**Current Day:** 33  
-**Next Milestone:** 70 Problems
+**Current Day:** 34  
+**Next Milestone:** 80 Problems
 
 ---
 
@@ -21,6 +22,11 @@ Total Problems Solved: 66
 
 | Day | Problem | LeetCode | Difficulty | Pattern |
 |---|---|---|---|---|
+| 34 | Kth Smallest Element in a BST | #230 | Medium | Inorder Traversal |
+| 34 | Rotting Oranges | #994 | Medium | Multi-Source BFS |
+| 34 | Partition Equal Subset Sum | #416 | Medium | 0/1 Knapsack DP |
+| 34 | Car Fleet | #853 | Medium | Sorting and Greedy |
+| 34 | Task Scheduler | #621 | Medium | Greedy and Frequency Counting |
 | 32 | Number of 1 Bits | #191 | Easy | Bit Manipulation |
 | 32 | Longest Increasing Subsequence | #300 | Medium | Binary Search and Greedy |
 | 33 | Is Subsequence | #392 | Easy | Two Pointers |
@@ -54,7 +60,19 @@ Total Problems Solved: 66
 - [x] Heap
 - [x] Backtracking
 - [x] Bit Manipulation
-- [ ] Graphs
+- [x] Graphs
+
+### Graph Algorithms Practised
+
+- Multi-Source Breadth-First Search (BFS)
+- Grid traversal
+- Level-by-level exploration
+- Tracking visited states
+- Finding the minimum time for a spreading process
+
+**Problem:** Rotting Oranges (LeetCode #994)
+
+Further graph topics to practise include DFS, cycle detection, topological sorting, and shortest-path algorithms.
 
 ---
 
@@ -105,7 +123,8 @@ For every problem, I aim to:
 - [x] 40 Problems
 - [x] 50 Problems
 - [x] 60 Problems
-- [ ] 70 Problems
+- [x] 70 Problems
+- [ ] 80 Problems
 
 ---
 
@@ -113,4 +132,4 @@ For every problem, I aim to:
 
 Build strong algorithmic thinking, improve implementation efficiency, and continue progressing toward technical interview readiness.
 
-Next Target: 70 Problems
+**Next Target:** 80 Problems

@@ -2322,3 +2322,152 @@ Expand the window to increase its sum. Once the sum reaches the target, shrink t
 ### Common Mistake
 
 Applying this exact sliding-window logic to arrays with negative numbers. Negative values break the monotonic relationship between window size and sum.
+
+
+## Day 34 - Problem 1: Kth Smallest Element in a BST
+
+- **LeetCode:** #230
+- **Difficulty:** Medium
+- **Pattern:** Inorder Traversal
+- **File:** `Trees/Kth_Smallest_Element_in_a_BST.py`
+
+### Recognition
+Find the kth smallest value in a Binary Search Tree.
+
+### Approach
+1. Use a stack to perform iterative inorder traversal.
+2. Traverse the left subtree before visiting a node.
+3. Decrease k each time a node is visited.
+4. Return the current node's value when k reaches zero.
+5. Explore the right subtree when necessary.
+
+### Key Idea
+Inorder traversal of a BST visits its values in ascending order. Stop as soon as the kth node is reached.
+
+### Complexity
+- Time: O(H + k), worst case O(n)
+- Auxiliary Space: O(H), worst case O(n)
+
+Here, H is the tree height and n is the number of nodes.
+
+### Common Mistake
+Using preorder traversal when sorted order is required.
+
+
+## Day 34 - Problem 2: Rotting Oranges
+
+- **LeetCode:** #994
+- **Difficulty:** Medium
+- **Pattern:** Multi-Source BFS
+- **File:** `Graphs/Rotting_Oranges.py`
+
+### Recognition
+Find the minimum time required for a process to spread through adjacent cells simultaneously.
+
+### Approach
+1. Add every initially rotten orange to a queue.
+2. Count the fresh oranges.
+3. Process the queue level by level.
+4. Each BFS level represents one minute.
+5. Mark newly reached fresh oranges as rotten and decrease the fresh count.
+6. Return -1 if fresh oranges remain unreachable.
+
+### Key Idea
+Start BFS from all initially rotten oranges to model simultaneous spreading.
+
+### Complexity
+- Time: O(m * n)
+- Auxiliary Space: O(m * n)
+
+Here, m and n are the grid dimensions.
+
+### Common Mistake
+Starting BFS from only one rotten orange or incorrectly counting elapsed minutes.
+
+
+## Day 34 - Problem 3: Partition Equal Subset Sum
+
+- **LeetCode:** #416
+- **Difficulty:** Medium
+- **Pattern:** 0/1 Knapsack / Dynamic Programming
+- **File:** `DynamicProgramming/Partition_Equal_Subset_Sum.py`
+
+### Recognition
+Determine whether an array can be divided into two subsets with equal sums.
+
+### Approach
+1. Calculate the total sum.
+2. If the total is odd, return False.
+3. Set the target to half the total.
+4. Use one-dimensional DP to track reachable sums.
+5. Iterate sums backward for each number.
+6. Return True as soon as the target becomes reachable.
+
+### Key Idea
+The problem reduces to finding a subset whose sum equals total // 2.
+
+### Complexity
+- Time: O(n * target)
+- Auxiliary Space: O(target)
+
+Here, target is half the total sum.
+
+### Common Mistake
+Iterating the DP array forward, which can allow the same number to be reused within an iteration.
+
+
+## Day 34 - Problem 4: Car Fleet
+
+- **LeetCode:** #853
+- **Difficulty:** Medium
+- **Pattern:** Sorting + Greedy
+- **File:** `Stack/Car_Fleet.py`
+
+### Recognition
+Count the groups of cars that arrive at a target without passing one another.
+
+### Approach
+1. Pair each car's position with its speed.
+2. Sort the cars by position in descending order.
+3. Calculate each car's time to reach the target.
+4. Track the arrival time of the fleet ahead.
+5. If a car takes longer, it forms a new fleet.
+6. Otherwise, it joins the fleet ahead.
+
+### Key Idea
+Process cars from nearest to the target to farthest. A car that catches a fleet ahead joins that fleet.
+
+### Complexity
+- Time: O(n log n)
+- Auxiliary Space: O(n)
+
+### Common Mistake
+Processing cars in the wrong order or counting a car as a separate fleet when it catches the fleet ahead.
+
+
+## Day 34 - Problem 5: Task Scheduler
+
+- **LeetCode:** #621
+- **Difficulty:** Medium
+- **Pattern:** Greedy + Frequency Counting
+- **File:** `Heap/Task_Scheduler.py`
+
+### Recognition
+Schedule tasks with a cooldown between identical tasks while minimizing the total number of intervals.
+
+### Approach
+1. Count the frequency of every task.
+2. Find the maximum task frequency.
+3. Count how many tasks share that maximum frequency.
+4. Calculate the minimum interval count imposed by the most frequent tasks.
+5. Return the larger of that count and the total number of tasks.
+
+### Key Idea
+The most frequent tasks determine the required schedule length. Other tasks can fill the cooldown gaps.
+
+### Complexity
+- Time: O(n), where n is the number of tasks, assuming a fixed task alphabet.
+- Auxiliary Space: O(1) for the fixed task alphabet.
+
+### Common Mistake
+Ignoring ties between tasks with the maximum frequency when calculating the minimum schedule length.
