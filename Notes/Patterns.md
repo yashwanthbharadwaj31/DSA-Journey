@@ -2471,3 +2471,194 @@ The most frequent tasks determine the required schedule length. Other tasks can 
 
 ### Common Mistake
 Ignoring ties between tasks with the maximum frequency when calculating the minimum schedule length.
+
+
+# Day 36 – DSA Patterns
+
+## 1. Course Schedule II – LeetCode #210
+
+**Difficulty:** Medium  
+**Topic:** Graphs  
+**Pattern:** Topological Sorting (Kahn's Algorithm)  
+**GitHub:** `Graphs/Course_Schedule_II.py`
+
+### Recognition Clues
+- Courses have prerequisite dependencies.
+- A course must be completed before another course.
+- We need to find a valid ordering.
+- Cyclic dependencies make completion impossible.
+
+### Approach
+Use a directed graph and BFS-based topological sorting.
+
+1. Build an adjacency list.
+2. Calculate the indegree of every vertex.
+3. Add all zero-indegree vertices to a queue.
+4. Process vertices using BFS.
+5. Reduce the indegree of their dependent vertices.
+6. Add newly available vertices to the queue.
+7. Return the ordering if all courses are processed; otherwise return an empty list.
+
+### Key Idea
+A directed acyclic graph has a valid topological ordering. If some vertices remain unprocessed, a cycle exists.
+
+### Complexity
+- Time: O(V + E)
+- Space: O(V + E)
+
+### Common Mistakes
+- Reversing the direction of prerequisite edges.
+- Forgetting to update indegrees.
+- Failing to detect cycles.
+- Returning a partial ordering when not all courses are processed.
+
+---
+
+## 2. Clone Graph – LeetCode #133
+
+**Difficulty:** Medium  
+**Topic:** Graphs  
+**Pattern:** DFS + Hash Map  
+**GitHub:** `Graphs/Clone_Graph.py`
+
+### Recognition Clues
+- The problem asks for a deep copy of a graph.
+- Nodes contain references to neighboring nodes.
+- The graph may contain cycles.
+- Original nodes must not be reused.
+
+### Approach
+Use DFS with a dictionary to map original nodes to cloned nodes.
+
+1. Handle an empty graph.
+2. Create a dictionary for original-to-cloned node mappings.
+3. Visit a node using DFS.
+4. Return its existing clone if it has already been visited.
+5. Otherwise, create a new node.
+6. Store the mapping before exploring neighbors.
+7. Recursively clone and connect all neighbors.
+
+### Key Idea
+The hash map prevents duplicate cloning and infinite recursion through cycles.
+
+Always store a cloned node before recursively visiting its neighbors.
+
+### Complexity
+- Time: O(V + E)
+- Space: O(V), including the mapping and recursion stack.
+
+### Common Mistakes
+- Using the original nodes instead of creating new nodes.
+- Marking a node as visited too late.
+- Forgetting to clone neighboring nodes.
+- Not handling an empty input.
+
+---
+
+## 3. Coin Change – LeetCode #322
+
+**Difficulty:** Medium  
+**Topic:** Dynamic Programming  
+**Pattern:** Unbounded Knapsack (Bottom-Up DP)  
+**GitHub:** `DynamicProgramming/Coin_Change.py`
+
+### Recognition Clues
+- We need the minimum number of coins.
+- Each denomination can be used multiple times.
+- We need to construct a target amount.
+- Greedy selection does not always produce the optimal answer.
+
+### Approach
+Use one-dimensional bottom-up dynamic programming.
+
+1. Create a DP array of size amount + 1.
+2. Initialize every position with amount + 1 as an impossible-value sentinel.
+3. Set dp[0] = 0.
+4. Iterate through every target amount from 1 to the given amount.
+5. Try every coin denomination.
+6. If the coin does not exceed the current amount, update the minimum number of coins.
+7. Return the result if reachable; otherwise return -1.
+
+### Recurrence
+
+dp[x] = min(dp[x], 1 + dp[x - coin])
+
+### Key Idea
+The optimal solution for an amount is constructed using previously calculated optimal solutions for smaller amounts.
+
+Since coins can be reused, this is an unbounded knapsack pattern.
+
+### Complexity
+- Time: O(A × C)
+- Space: O(A)
+
+A = target amount  
+C = number of coin denominations.
+
+### Common Mistakes
+- Assuming greedy always works.
+- Incorrectly initializing dp[0].
+- Forgetting that a coin can be reused.
+- Returning an impossible sentinel instead of -1.
+
+---
+
+## 4. Min Stack – LeetCode #155
+
+**Difficulty:** Medium  
+**Topic:** Stack  
+**Pattern:** Stack + Auxiliary Minimum Tracking  
+**GitHub:** `Stack/Min_Stack.py`
+
+### Recognition Clues
+- The problem requires standard stack operations.
+- Minimum value must be retrieved in constant time.
+- Recalculating the minimum after every operation would be inefficient.
+
+### Approach
+Maintain two stacks:
+
+1. Main stack stores all values.
+2. Minimum stack stores minimum values as they are encountered.
+
+Operations:
+
+- push(): Add the value to the main stack. If it is less than or equal to the current minimum, also add it to the minimum stack.
+- pop(): Remove the top value. If it equals the current minimum, remove it from the minimum stack too.
+- top(): Return the last value of the main stack.
+- getMin(): Return the last value of the minimum stack.
+
+### Key Idea
+The auxiliary stack maintains the current minimum without scanning the main stack.
+
+Using <= during insertion is essential for duplicate minimum values.
+
+### Complexity
+- Time: O(1) per operation.
+- Space: O(n).
+
+### Common Mistakes
+- Using < instead of <= when tracking minimums.
+- Recalculating the minimum by scanning the stack.
+- Updating only one stack during removal.
+- Forgetting to synchronize both stacks.
+
+---
+
+## Day 36 – Patterns Practised
+
+| Problem | Pattern |
+|---|---|
+| Course Schedule II | Topological Sorting |
+| Clone Graph | DFS + Hash Map |
+| Coin Change | Unbounded Knapsack |
+| Min Stack | Auxiliary Stack |
+
+### Key Takeaways
+
+- Topological sorting helps solve dependency-ordering problems.
+- DFS with a hash map enables deep copying of cyclic graphs.
+- Dynamic programming avoids repeatedly solving overlapping subproblems.
+- Auxiliary stacks can provide constant-time access to additional information.
+
+These problems introduce further applications of Graphs, Dynamic Programming and Stack techniques. They do not imply mastery of the entire topic.

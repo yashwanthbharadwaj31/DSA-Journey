@@ -1,9 +1,10 @@
-
 # DSA Journey
 
 Documenting my Data Structures and Algorithms journey through LeetCode using Python.
 
 My goal is to strengthen problem-solving skills, recognize common DSA patterns, and build consistency through daily practice.
+
+---
 
 ## Progress
 
@@ -13,7 +14,7 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 - Medium: 41
 - Hard: 2
 
-**Current Day:** 34  
+**Current Day:** 36  
 **Next Milestone:** 80 Problems
 
 ---
@@ -22,15 +23,19 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 
 | Day | Problem | LeetCode | Difficulty | Pattern |
 |---|---|---|---|---|
+| 36 | Course Schedule II | #210 | Medium | Topological Sorting |
+| 36 | Clone Graph | #133 | Medium | DFS and Hash Map |
+| 36 | Coin Change | #322 | Medium | Unbounded Knapsack DP |
+| 36 | Min Stack | #155 | Medium | Stack and Auxiliary Minimum Tracking |
 | 34 | Kth Smallest Element in a BST | #230 | Medium | Inorder Traversal |
 | 34 | Rotting Oranges | #994 | Medium | Multi-Source BFS |
 | 34 | Partition Equal Subset Sum | #416 | Medium | 0/1 Knapsack DP |
 | 34 | Car Fleet | #853 | Medium | Sorting and Greedy |
 | 34 | Task Scheduler | #621 | Medium | Greedy and Frequency Counting |
-| 32 | Number of 1 Bits | #191 | Easy | Bit Manipulation |
-| 32 | Longest Increasing Subsequence | #300 | Medium | Binary Search and Greedy |
 | 33 | Is Subsequence | #392 | Easy | Two Pointers |
 | 33 | Minimum Size Subarray Sum | #209 | Medium | Sliding Window |
+| 32 | Number of 1 Bits | #191 | Easy | Bit Manipulation |
+| 32 | Longest Increasing Subsequence | #300 | Medium | Binary Search and Greedy |
 | 31 | Counting Bits | #338 | Easy | Bit Manipulation and Dynamic Programming |
 | 31 | LRU Cache | #146 | Medium | Hash Map and Doubly Linked List |
 | 30 | Climbing Stairs | #70 | Easy | Dynamic Programming |
@@ -39,6 +44,8 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 | 29 | First Missing Positive | #41 | Hard | Index Placement |
 | 28 | Single Number | #136 | Easy | Bit Manipulation |
 | 28 | Trapping Rain Water | #42 | Hard | Two Pointers |
+
+**Note:** Day 36 solutions have been prepared. Their LeetCode acceptance is pending confirmation and they are not included in the solved-problem totals yet.
 
 ---
 
@@ -69,10 +76,43 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 - Level-by-level exploration
 - Tracking visited states
 - Finding the minimum time for a spreading process
+- Topological Sorting using Kahn's Algorithm
+- Directed graph dependency analysis
+- Depth-First Search (DFS)
+- Graph cloning using a Hash Map
+- Cycle detection through topological sorting
 
-**Problem:** Rotting Oranges (LeetCode #994)
+**Problems:**
+- Rotting Oranges (LeetCode #994)
+- Course Schedule II (LeetCode #210)
+- Clone Graph (LeetCode #133)
 
-Further graph topics to practise include DFS, cycle detection, topological sorting, and shortest-path algorithms.
+Further graph topics to practise include advanced cycle detection, shortest-path algorithms, Dijkstra's algorithm, and other graph traversal techniques.
+
+### Dynamic Programming Practised
+
+- 0/1 Knapsack
+- Fibonacci-style Dynamic Programming
+- Binary Search and Greedy optimization for LIS
+- Unbounded Knapsack
+- Bottom-Up Dynamic Programming
+- One-dimensional DP optimization
+
+**Problems:**
+- Partition Equal Subset Sum (LeetCode #416)
+- Climbing Stairs (LeetCode #70)
+- Longest Increasing Subsequence (LeetCode #300)
+- Coin Change (LeetCode #322)
+
+### Stack Patterns Practised
+
+- Stack operations
+- Auxiliary stack
+- Minimum element tracking
+- Maintaining minimum values in constant time
+
+**Problem:**
+- Min Stack (LeetCode #155)
 
 ---
 
