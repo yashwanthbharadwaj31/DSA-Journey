@@ -8,13 +8,13 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 
 ## Progress
 
-**Total Problems Solved:** 71
+**Total Problems Solved:** 77
 
-- Easy: 28
-- Medium: 41
+- Easy: 30
+- Medium: 45
 - Hard: 2
 
-**Current Day:** 36  
+**Current Day:** 37  
 **Next Milestone:** 80 Problems
 
 ---
@@ -23,6 +23,8 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 
 | Day | Problem | LeetCode | Difficulty | Pattern |
 |---|---|---|---|---|
+| 37 | Invert Binary Tree | #226 | Easy | Recursive DFS |
+| 37 | Path Sum | #112 | Easy | DFS and Recursion |
 | 36 | Course Schedule II | #210 | Medium | Topological Sorting |
 | 36 | Clone Graph | #133 | Medium | DFS and Hash Map |
 | 36 | Coin Change | #322 | Medium | Unbounded Knapsack DP |
@@ -44,8 +46,6 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 | 29 | First Missing Positive | #41 | Hard | Index Placement |
 | 28 | Single Number | #136 | Easy | Bit Manipulation |
 | 28 | Trapping Rain Water | #42 | Hard | Two Pointers |
-
-**Note:** Day 36 solutions have been prepared. Their LeetCode acceptance is pending confirmation and they are not included in the solved-problem totals yet.
 
 ---
 
@@ -113,6 +113,24 @@ Further graph topics to practise include advanced cycle detection, shortest-path
 
 **Problem:**
 - Min Stack (LeetCode #155)
+
+### Tree Algorithms Practised
+
+- Binary Tree traversal
+- Inorder Traversal
+- Recursive Depth-First Search (DFS)
+- Inverting binary trees
+- Swapping left and right subtrees
+- Root-to-leaf path traversal
+- Recursive path sum calculation
+- Base case handling in tree recursion
+
+**Problems:**
+- Kth Smallest Element in a BST (LeetCode #230)
+- Invert Binary Tree (LeetCode #226)
+- Path Sum (LeetCode #112)
+
+Further tree topics to practise include tree diameter, balanced binary trees, lowest common ancestor, and advanced binary tree traversal.
 
 ---
 

@@ -2662,3 +2662,119 @@ Using <= during insertion is essential for duplicate minimum values.
 - Auxiliary stacks can provide constant-time access to additional information.
 
 These problems introduce further applications of Graphs, Dynamic Programming and Stack techniques. They do not imply mastery of the entire topic.
+
+# Day 37 – Tree Patterns
+
+## 1. Invert Binary Tree – LeetCode #226
+
+**Difficulty:** Easy  
+**Topic:** Trees  
+**Pattern:** Recursive DFS  
+**GitHub:** `Trees/Invert_Binary_Tree.py`
+
+### Recognition Clues
+
+- The problem involves a binary tree.
+- Left and right children must be swapped.
+- The operation must be applied to every node.
+- Recursive processing of subtrees is suitable.
+
+### Approach
+
+Use recursive Depth-First Search (DFS).
+
+1. Check whether the current node is None.
+2. If it is None, return None.
+3. Swap the left and right children.
+4. Recursively invert the left subtree.
+5. Recursively invert the right subtree.
+6. Return the root.
+
+### Key Idea
+
+Every node must exchange its left and right children.
+
+The same operation is recursively applied to both subtrees until all nodes have been processed.
+
+### Complexity
+
+- Time: O(n), because every node is visited once.
+- Auxiliary Space: O(h), where h is the height of the tree, due to the recursion stack.
+
+Worst-case auxiliary space is O(n) for a skewed tree and O(log n) for a balanced tree.
+
+### Common Mistakes
+
+- Swapping children only at the root.
+- Forgetting to recursively process both subtrees.
+- Missing the base case for an empty node.
+- Returning the wrong root.
+
+---
+
+## 2. Path Sum – LeetCode #112
+
+**Difficulty:** Easy  
+**Topic:** Trees  
+**Pattern:** DFS + Recursion  
+**GitHub:** `Trees/Path_Sum.py`
+
+### Recognition Clues
+
+- The problem asks for a root-to-leaf path.
+- Values along a path must satisfy a target sum.
+- Each node contributes to the running sum.
+- Recursive DFS can explore all possible paths.
+
+### Approach
+
+Use recursive DFS with a remaining target sum.
+
+1. Check whether the current node is None.
+2. If it is None, return False.
+3. Check whether the current node is a leaf.
+4. If it is a leaf, compare its value with the remaining target.
+5. Subtract the current node's value from the target.
+6. Recursively explore the left and right subtrees.
+7. Return True if either subtree contains a valid path.
+
+### Key Idea
+
+Instead of calculating the complete path sum repeatedly, subtract each visited node's value from the remaining target.
+
+A valid path must end at a leaf. Reaching a remaining sum of zero at an internal node is not sufficient.
+
+### Complexity
+
+- Time: O(n), because each node is visited at most once.
+- Auxiliary Space: O(h), where h is the height of the tree, due to the recursion stack.
+
+Worst-case auxiliary space is O(n) for a skewed tree and O(log n) for a balanced tree.
+
+### Common Mistakes
+
+- Returning True immediately when the remaining sum reaches zero.
+- Forgetting to verify that the current node is a leaf.
+- Incorrectly handling empty nodes.
+- Exploring only one subtree.
+- Confusing root-to-leaf paths with paths that can end at any node.
+
+---
+
+## Day 37 – Patterns Practised
+
+| Problem | Pattern |
+|---|---|
+| Invert Binary Tree | Recursive DFS |
+| Path Sum | DFS + Remaining Target |
+
+### Key Takeaways
+
+- Recursive DFS provides a natural way to process binary trees.
+- Every recursive solution needs a clear base case.
+- Tree inversion can be performed by swapping child references at every node.
+- Root-to-leaf problems require checking the leaf condition.
+- Passing a remaining target avoids repeatedly calculating complete path sums.
+
+These problems provide practice with recursive binary tree traversal and DFS. They do not imply mastery of all tree algorithms.
+
