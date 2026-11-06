@@ -8,13 +8,13 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 
 ## Progress
 
-**Total Problems Solved:** 77
+**Total Problems Solved:** 79
 
 - Easy: 30
 - Medium: 45
-- Hard: 2
+- Hard: 4
 
-**Current Day:** 37  
+**Current Day:** 38  
 **Next Milestone:** 80 Problems
 
 ---
@@ -23,6 +23,8 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 
 | Day | Problem | LeetCode | Difficulty | Pattern |
 |---|---|---|---|---|
+| 38 | Binary Tree Maximum Path Sum | #124 | Hard | DFS and Tree DP |
+| 38 | Largest Rectangle in Histogram | #84 | Hard | Monotonic Increasing Stack |
 | 37 | Invert Binary Tree | #226 | Easy | Recursive DFS |
 | 37 | Path Sum | #112 | Easy | DFS and Recursion |
 | 36 | Course Schedule II | #210 | Medium | Topological Sorting |
@@ -97,12 +99,15 @@ Further graph topics to practise include advanced cycle detection, shortest-path
 - Unbounded Knapsack
 - Bottom-Up Dynamic Programming
 - One-dimensional DP optimization
+- Tree Dynamic Programming
+- Maximum path calculation in binary trees
 
 **Problems:**
 - Partition Equal Subset Sum (LeetCode #416)
 - Climbing Stairs (LeetCode #70)
 - Longest Increasing Subsequence (LeetCode #300)
 - Coin Change (LeetCode #322)
+- Binary Tree Maximum Path Sum (LeetCode #124)
 
 ### Stack Patterns Practised
 
@@ -110,9 +115,13 @@ Further graph topics to practise include advanced cycle detection, shortest-path
 - Auxiliary stack
 - Minimum element tracking
 - Maintaining minimum values in constant time
+- Monotonic Increasing Stack
+- Finding previous and next smaller elements
+- Efficient histogram rectangle calculation
 
-**Problem:**
+**Problems:**
 - Min Stack (LeetCode #155)
+- Largest Rectangle in Histogram (LeetCode #84)
 
 ### Tree Algorithms Practised
 
@@ -124,11 +133,15 @@ Further graph topics to practise include advanced cycle detection, shortest-path
 - Root-to-leaf path traversal
 - Recursive path sum calculation
 - Base case handling in tree recursion
+- Maximum path sum
+- Tree Dynamic Programming
+- Combining left and right subtree contributions
 
 **Problems:**
 - Kth Smallest Element in a BST (LeetCode #230)
 - Invert Binary Tree (LeetCode #226)
 - Path Sum (LeetCode #112)
+- Binary Tree Maximum Path Sum (LeetCode #124)
 
 Further tree topics to practise include tree diameter, balanced binary trees, lowest common ancestor, and advanced binary tree traversal.
 

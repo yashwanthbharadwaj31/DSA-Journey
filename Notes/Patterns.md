@@ -2778,3 +2778,146 @@ Worst-case auxiliary space is O(n) for a skewed tree and O(log n) for a balanced
 
 These problems provide practice with recursive binary tree traversal and DFS. They do not imply mastery of all tree algorithms.
 
+# Day 38 – Advanced Tree and Stack Patterns
+
+## 1. Binary Tree Maximum Path Sum – LeetCode #124
+
+**Difficulty:** Hard  
+**Topic:** Trees  
+**Pattern:** DFS + Tree Dynamic Programming  
+**GitHub:** `Trees/Binary_Tree_Maximum_Path_Sum.py`
+
+### Recognition Clues
+
+- The problem asks for the maximum sum of a path in a binary tree.
+- The path can start and end at any node.
+- A path can include both left and right subtrees through a common parent.
+- Negative node values must be handled carefully.
+
+### Approach
+
+Use recursive DFS with a global maximum.
+
+1. Initialize the global maximum to negative infinity.
+2. Traverse the tree recursively using DFS.
+3. Calculate the maximum contribution from the left subtree.
+4. Calculate the maximum contribution from the right subtree.
+5. Ignore negative contributions using max(0, contribution).
+6. Calculate the maximum path passing through the current node using both branches.
+7. Update the global maximum.
+8. Return the current node's value plus the larger of its two subtree contributions.
+
+### Key Idea
+
+There are two different calculations:
+
+**Maximum path through the current node:**
+
+Current node value + left contribution + right contribution.
+
+This updates the global answer.
+
+**Maximum path returned to the parent:**
+
+Current node value + maximum of the left and right contributions.
+
+Only one branch can be returned because a path cannot split into two branches when extended upward.
+
+### Complexity
+
+- Time: O(n), because every node is visited once.
+- Auxiliary Space: O(h), where h is the height of the tree, due to the recursion stack.
+
+Worst-case auxiliary space is O(n) for a skewed tree and O(log n) for a balanced tree.
+
+### Common Mistakes
+
+- Assuming the maximum path must start at the root.
+- Returning both left and right contributions to the parent.
+- Including negative subtree contributions.
+- Initializing the global maximum to zero.
+- Confusing the maximum downward path with the maximum complete path.
+
+---
+
+## 2. Largest Rectangle in Histogram – LeetCode #84
+
+**Difficulty:** Hard  
+**Topic:** Stack  
+**Pattern:** Monotonic Increasing Stack  
+**GitHub:** `Stack/Largest_Rectangle_in_Histogram.py`
+
+### Recognition Clues
+
+- The problem asks for the maximum rectangular area in a histogram.
+- Every bar has a width of one.
+- A rectangle's height is limited by its shortest bar.
+- We need to find how far each bar can extend to the left and right.
+- An O(n) solution is required.
+
+### Approach
+
+Use a monotonic increasing stack to store indices.
+
+1. Initialize an empty stack and maximum area as zero.
+2. Traverse the histogram from left to right.
+3. Maintain increasing bar heights using their indices.
+4. When the current height is smaller than the height at the stack top, pop the previous index.
+5. Use the current index as the right boundary.
+6. Use the new stack top as the previous smaller element.
+7. Calculate the rectangle width and area.
+8. Update the maximum area.
+9. Process an additional virtual bar of height zero to flush remaining indices.
+
+### Key Idea
+
+When a bar is popped, we have identified its first smaller bar on the right.
+
+The new stack top identifies its previous smaller bar on the left.
+
+The rectangle width is calculated as:
+
+If the stack is not empty:
+
+width = current_index - stack_top - 1
+
+If the stack is empty:
+
+width = current_index
+
+Rectangle area:
+
+area = height * width
+
+### Complexity
+
+- Time: O(n), because every index is pushed and popped at most once.
+- Auxiliary Space: O(n), for the monotonic stack.
+
+### Common Mistakes
+
+- Storing heights instead of indices.
+- Incorrectly calculating rectangle width.
+- Forgetting the final zero-height iteration.
+- Using the current bar's height instead of the popped bar's height.
+- Assuming nested loops automatically mean O(n²).
+
+---
+
+## Day 38 – Patterns Practised
+
+| Problem | Pattern |
+|---|---|
+| Binary Tree Maximum Path Sum | DFS + Tree DP |
+| Largest Rectangle in Histogram | Monotonic Increasing Stack |
+
+### Key Takeaways
+
+- Tree DP can solve problems where a node combines information from multiple subtrees.
+- The value returned to a parent can differ from the best complete answer found at the current node.
+- Negative subtree contributions should be discarded when maximizing a path sum.
+- Monotonic stacks efficiently identify previous and next smaller elements.
+- Every index in a monotonic stack can be pushed and popped at most once.
+- An additional sentinel iteration can simplify stack cleanup.
+
+These problems provide practice with advanced tree recursion, dynamic programming and monotonic stack techniques. They do not imply mastery of all tree or stack algorithms.
