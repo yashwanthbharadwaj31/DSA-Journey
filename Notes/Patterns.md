@@ -2921,3 +2921,234 @@ area = height * width
 - An additional sentinel iteration can simplify stack cleanup.
 
 These problems provide practice with advanced tree recursion, dynamic programming and monotonic stack techniques. They do not imply mastery of all tree or stack algorithms.
+
+# Day 39 – Advanced Heap, Sliding Window and Linked List Patterns
+
+## 1. Merge k Sorted Lists – LeetCode #23
+
+**Difficulty:** Hard  
+**Topic:** Linked List  
+**Pattern:** Min Heap + K-way Merge  
+**GitHub:** `LinkedList/Merge_K_Sorted_Lists.py`
+
+### Recognition Clues
+
+- Multiple sorted linked lists must be merged.
+- The smallest available node must be selected repeatedly.
+- Comparing every node against every other node would be inefficient.
+- A priority queue can efficiently maintain the smallest available element.
+
+### Approach
+
+Use a Min Heap to perform a K-way merge.
+
+1. Create an empty min heap.
+2. Insert the first node of every non-empty linked list.
+3. Extract the smallest node.
+4. Attach it to the merged linked list.
+5. Insert the extracted node's next node into the heap if it exists.
+6. Repeat until the heap becomes empty.
+7. Return the merged linked list.
+
+Store tuples containing the node value, list index and node reference to handle duplicate values safely in Python.
+
+### Key Idea
+
+Only one active node from each linked list needs to be present in the heap.
+
+After extracting a node, its next node becomes the next candidate from that list.
+
+### Complexity
+
+Let N be the total number of nodes and k be the number of linked lists.
+
+- Time: O(N log k).
+- Auxiliary Space: O(k).
+
+### Common Mistakes
+
+- Inserting entire linked lists instead of their first nodes.
+- Forgetting to insert the next node after extraction.
+- Allowing Python to compare ListNode objects when values are equal.
+- Creating unnecessary new nodes.
+- Forgetting to terminate the final linked list.
+
+---
+
+## 2. Minimum Window Substring – LeetCode #76
+
+**Difficulty:** Hard  
+**Topic:** Sliding Window  
+**Pattern:** Variable-size Sliding Window + Hash Map  
+**GitHub:** `SlidingWindow/Minimum_Window_Substring.py`
+
+### Recognition Clues
+
+- Find the smallest substring containing all required characters.
+- Duplicate characters must be considered.
+- The window can expand and shrink.
+- Character frequency tracking is required.
+
+### Approach
+
+Use a variable-size sliding window with Counter.
+
+1. Count the required characters in t.
+2. Initialize left and right pointers.
+3. Expand the window using the right pointer.
+4. Decrease the remaining frequency of each incoming character.
+5. Track how many required characters are still missing.
+6. Once the window becomes valid, shrink it from the left.
+7. Record the smallest valid window.
+8. Return the minimum substring.
+
+### Key Idea
+
+Use a frequency dictionary and a missing-character counter instead of repeatedly checking whether the entire window contains t.
+
+Negative frequencies represent extra occurrences of characters.
+
+A valid window must contain every required character, including duplicates.
+
+### Complexity
+
+Let m be the length of s and n be the length of t.
+
+- Time: O(m + n).
+- Auxiliary Space: O(n) for the frequency dictionary.
+
+### Common Mistakes
+
+- Using a set instead of character frequencies.
+- Ignoring duplicate characters.
+- Shrinking the window before it becomes valid.
+- Returning the first valid window instead of the smallest.
+- Recalculating frequencies for every substring.
+
+---
+
+## 3. Find Median from Data Stream – LeetCode #295
+
+**Difficulty:** Hard  
+**Topic:** Heap  
+**Pattern:** Two Heaps  
+**GitHub:** `Heap/Find_Median_from_Data_Stream.py`
+
+### Recognition Clues
+
+- Numbers arrive continuously.
+- The median must be available after every insertion.
+- Sorting the entire collection after every insertion is inefficient.
+- The smaller and larger halves need to remain balanced.
+
+### Approach
+
+Use two heaps.
+
+**Max Heap:**
+Stores the smaller half of the numbers.
+
+**Min Heap:**
+Stores the larger half of the numbers.
+
+In Python, simulate a max heap using negative values with heapq.
+
+1. Insert the new number into the max heap.
+2. Move the maximum of the smaller half into the min heap.
+3. If the min heap becomes larger, move its minimum back into the max heap.
+4. Maintain the size difference between the heaps at zero or one.
+5. Calculate the median using the heap roots.
+
+### Key Idea
+
+The max heap contains the smaller half, while the min heap contains the larger half.
+
+The median is always available at the roots of the heaps.
+
+- Odd number of elements: Return the root of the max heap.
+- Even number of elements: Return the average of both heap roots.
+
+### Complexity
+
+- addNum(): O(log n).
+- findMedian(): O(1).
+- Auxiliary Space: O(n).
+
+### Common Mistakes
+
+- Forgetting to negate values for the max heap.
+- Allowing the heaps to become unbalanced.
+- Reversing the smaller and larger halves.
+- Incorrectly calculating the median for even-sized collections.
+
+---
+
+## 4. Sliding Window Maximum – LeetCode #239
+
+**Difficulty:** Hard  
+**Topic:** Sliding Window  
+**Pattern:** Monotonic Deque  
+**GitHub:** `SlidingWindow/Sliding_Window_Maximum.py`
+
+### Recognition Clues
+
+- Find the maximum element in every window of size k.
+- The window moves one position at a time.
+- Recalculating the maximum for every window is inefficient.
+- Previously processed elements can become irrelevant.
+
+### Approach
+
+Use a monotonic decreasing deque storing indices.
+
+1. Create an empty deque and result list.
+2. Traverse the array using the right pointer.
+3. Remove indices from the front that are outside the current window.
+4. Remove smaller or equal elements from the back.
+5. Insert the current index.
+6. Once a complete window is formed, add the value at the deque's front to the result.
+7. Return the result.
+
+### Key Idea
+
+The deque maintains indices in decreasing order of their corresponding values.
+
+The front always contains the index of the maximum element in the current window.
+
+Smaller elements behind a newly inserted larger element can be removed because they cannot become the maximum while the newer element remains in the window.
+
+### Complexity
+
+- Time: O(n).
+- Auxiliary Space: O(k).
+
+Every index is inserted once and removed at most once.
+
+### Common Mistakes
+
+- Storing values instead of indices.
+- Forgetting to remove expired indices.
+- Maintaining the wrong monotonic order.
+- Adding results before a complete window is formed.
+- Recalculating the maximum for every window.
+
+---
+
+## Day 39 – Patterns Practised
+
+| Problem | Pattern |
+|---|---|
+| Merge k Sorted Lists | Min Heap + K-way Merge |
+| Minimum Window Substring | Variable-size Sliding Window |
+| Find Median from Data Stream | Two Heaps |
+| Sliding Window Maximum | Monotonic Deque |
+
+### Key Takeaways
+
+- Min Heaps efficiently merge multiple sorted collections.
+- Frequency dictionaries help solve substring problems involving duplicate characters.
+- Two Heaps maintain the median of a continuously growing dataset.
+- Monotonic Deques efficiently maintain maximum values across moving windows.
+- Each problem requires selecting the right data structure to avoid unnecessary repeated operations.
+
+Day 39 provided practice with advanced heap operations, linked list merging, frequency-based sliding windows and monotonic deque techniques.

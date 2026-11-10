@@ -8,14 +8,14 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 
 ## Progress
 
-**Total Problems Solved:** 79
+**Total Problems Solved:** 83
 
 - Easy: 30
 - Medium: 45
-- Hard: 4
+- Hard: 8
 
-**Current Day:** 38  
-**Next Milestone:** 80 Problems
+**Current Day:** 39  
+**Next Milestone:** 90 Problems
 
 ---
 
@@ -23,6 +23,10 @@ My goal is to strengthen problem-solving skills, recognize common DSA patterns, 
 
 | Day | Problem | LeetCode | Difficulty | Pattern |
 |---|---|---|---|---|
+| 39 | Merge k Sorted Lists | #23 | Hard | Min Heap and K-way Merge |
+| 39 | Minimum Window Substring | #76 | Hard | Sliding Window and Hash Map |
+| 39 | Find Median from Data Stream | #295 | Hard | Two Heaps |
+| 39 | Sliding Window Maximum | #239 | Hard | Monotonic Deque |
 | 38 | Binary Tree Maximum Path Sum | #124 | Hard | DFS and Tree DP |
 | 38 | Largest Rectangle in Histogram | #84 | Hard | Monotonic Increasing Stack |
 | 37 | Invert Binary Tree | #226 | Easy | Recursive DFS |
@@ -123,6 +127,49 @@ Further graph topics to practise include advanced cycle detection, shortest-path
 - Min Stack (LeetCode #155)
 - Largest Rectangle in Histogram (LeetCode #84)
 
+### Heap Algorithms Practised
+
+- Min Heap
+- Max Heap simulation using negative values
+- K-way merging
+- Priority queue operations
+- Two Heap technique
+- Maintaining balanced heaps
+- Finding the median from a continuous data stream
+
+**Problems:**
+- Kth Largest Element in an Array (LeetCode #215)
+- Merge k Sorted Lists (LeetCode #23)
+- Find Median from Data Stream (LeetCode #295)
+
+### Sliding Window Patterns Practised
+
+- Fixed-size Sliding Window
+- Variable-size Sliding Window
+- Frequency-based window tracking
+- Hash Map and Counter
+- Minimum Window Substring
+- Monotonic Deque
+- Sliding Window Maximum
+- Efficient removal of expired indices
+
+**Problems:**
+- Minimum Size Subarray Sum (LeetCode #209)
+- Minimum Window Substring (LeetCode #76)
+- Sliding Window Maximum (LeetCode #239)
+
+### Linked List Patterns Practised
+
+- Linked List traversal
+- Pointer manipulation
+- Dummy node technique
+- Merging sorted linked lists
+- Priority Queue-based merging
+- Reusing existing linked list nodes
+
+**Problem:**
+- Merge k Sorted Lists (LeetCode #23)
+
 ### Tree Algorithms Practised
 
 - Binary Tree traversal
@@ -195,7 +242,8 @@ For every problem, I aim to:
 - [x] 50 Problems
 - [x] 60 Problems
 - [x] 70 Problems
-- [ ] 80 Problems
+- [x] 80 Problems
+- [ ] 90 Problems
 
 ---
 
@@ -203,4 +251,4 @@ For every problem, I aim to:
 
 Build strong algorithmic thinking, improve implementation efficiency, and continue progressing toward technical interview readiness.
 
-**Next Target:** 80 Problems
+**Next Target:** 90 Problems
